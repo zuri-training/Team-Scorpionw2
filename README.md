@@ -33,13 +33,30 @@ The platform will basically provide services to two categories of users namely; 
 
 
 
-## Tech Stack
+# Tech Stack
 
-**Frontend:** HTML, CSS, Javascript, Bootstrap
+## Frontend
+### CSS HTML
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/64px-CSS3_and_HTML5_logos_and_wordmarks.svg.png"> 
 
-**Backend:** Python, Django
+### Javascript
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/32px-Javascript-shield.svg.png">
 
-**Design:** Figma
+## Backend
+### Python
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/64px-Python-logo-notext.svg.png">
+
+### Django
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Django_logo.png">
+
+
+## Database
+### MySQL
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" width="80" height="80">
+
+## Version Control
+### GitHub
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg" width="40" height="40">
 
 
 
