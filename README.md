@@ -1,5 +1,5 @@
 
-# Content Management System
+# Content Management System _ Team-Scorpionw2
 
 This platform is aimed at developing a user-friendly platform that enables users without any coding background or knowledge to create and customize their own websites in minutes. It also allow user to select from the available templates and customize it according to his/her wish.
 The platform will basically provide services to two categories of users namely; authenticated users and un-authenticated users. The authenticated users will have full access to all the services offered by the platform while the unauthenticated user will have limited access to only a select few basic features and a call to action.
