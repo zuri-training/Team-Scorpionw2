@@ -85,7 +85,11 @@ The platform will basically provide services to two categories of users namely; 
 ## Contributors (Team Scorpion)
 
 - **Developers**
-  - Emmanuel Obeta
+  - [Obeta Emmanuel](https://www.github.com/Emmizychuks)
+  - [Chimatara Kalu](https://www.github.com/Chimatara)
+  - [Ugbo Joy](https://www.github.com/Akocity)
+  - [AbdulAzeez Nuhu](https://www.github.com/Abdul742)
+  - [Agboyinu Success](https://www.github.com/SuccessTA)
 - **Designers**
   - Richard Babasola
 
