@@ -1,7 +1,7 @@
 
 # Content Management System
 
-This platform allow user to create a basic website such as landing page, portfolio and etc. It also allow user to select from the available templates and customize it according to his/her wish.
+This platform is aimed at developing a user-friendly platform that enables users without any coding background or knowledge to create and customize their own websites in minutes. It also allow user to select from the available templates and customize it according to his/her wish.
 
 
 ## Features
