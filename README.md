@@ -88,8 +88,8 @@ The platform will basically provide services to two categories of users namely; 
   - [Obeta Emmanuel](https://www.github.com/Emmizychuks)
   - [Chimatara Kalu](https://www.github.com/Chimatara)
   - [Ugbo Joy](https://www.github.com/Akocity)
-  - [AbdulAzeez Nuhu](https://www.github.com/Abdul742)
+  - [AbdulAzeez Nuhu](https://www.github.com/Abdul703)
   - [Agboyinu Success](https://www.github.com/SuccessTA)
 - **Designers**
   - Richard Babasola
-
+  - [Oyeniyi Adewale](https://www.github.com/Fadstrukt)
