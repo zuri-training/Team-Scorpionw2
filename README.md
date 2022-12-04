@@ -91,7 +91,7 @@ The platform will basically provide services to two categories of users namely; 
   - [AbdulAzeez Nuhu](https://www.github.com/Abdul703)
   - [Agboyinu Success](https://www.github.com/SuccessTA)
   - [Chiamaka Ezimmuo](https://github.com/Miriamchy)
-  - [Sonia Biose]()
+  - [Sonia Biose](https://github.com/SoniaBiose)
 
 - **Designers**
   - [Richard Babasola](https://www.github.com/Richardbabasola) _Team Lead_
