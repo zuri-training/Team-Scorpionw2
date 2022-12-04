@@ -28,10 +28,10 @@ The platform will basically provide services to two categories of users namely; 
 # Resources
 
 - [Documentation](https://docs.google.com/document/d/1zt5jb4y4N_L_i4R6az7JikxLBntXeOZys4qfWt-FibE/edit?usp=sharing)
-- [Designs from the Product Design Team](https://www.figma.com/file/8Yasy1Zyh7o291W2SnAf1O/Design-Sketch---Team-Scorpionw2?node-id=0%3A1)
+- [Designs Sketch](https://www.figma.com/file/8Yasy1Zyh7o291W2SnAf1O/Design-Sketch---Team-Scorpionw2?node-id=0%3A1)
+- [GitHub Repo with read.me content](https://github.com/zuri-training/Team-Scorpionw2/blob/main/README.md)
 - [Database Schema]( https://www.figma.com/file/CqKwL9mbtSXRap2lQgkTSt/Team-Scorpionw2-myCMS?node-id=0%3A1&t=HD7u4pKamZIgqAfS-1 )
-
-
+- [Mood Board](https://www.figma.com/file/kg84xTxXvhypw8GGIhoyYA/MOOD-BOARD-Team-Scorpionw2?node-id=28%3A7&t=T5eJHHsT8g9ho7ds-1)
 
 ## Tech Stack
 
