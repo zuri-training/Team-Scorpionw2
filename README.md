@@ -96,7 +96,7 @@ The platform will basically provide services to two categories of users namely; 
 - **Designers**
   - [Richard Babasola](https://www.github.com/Richardbabasola) _Team Lead_
   - [Frances Unegbu]()
-  - [Faith Adeoye]()
+  - [Faith Adeoye](https://github.com/faithadeoye)
   - [Emmanuel Isilo]()
   - [Onyiyechukwu Odidika]()
   - [Joshua Adebisi]()
