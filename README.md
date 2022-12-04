@@ -92,7 +92,6 @@ The platform will basically provide services to two categories of users namely; 
   - [Agboyinu Success](https://www.github.com/SuccessTA)
   - [Chiamaka Ezimmuo](https://github.com/Miriamchy)
   - [Sonia Biose]()
-  - [Saheed Ibrahim]()
 
 - **Designers**
   - [Richard Babasola](https://www.github.com/Richardbabasola) _Team Lead_
@@ -105,3 +104,4 @@ The platform will basically provide services to two categories of users namely; 
   - [Wisdom Ndem]()
   - [John Udoh]()
   - [Noorul-Haq Adeoye]()
+  - [Oyeniyi Adewale](https://github.com/Fadstrukt)
