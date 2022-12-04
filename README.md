@@ -90,7 +90,7 @@ The platform will basically provide services to two categories of users namely; 
   - [Ugbo Joy](https://www.github.com/Akocity)
   - [AbdulAzeez Nuhu](https://www.github.com/Abdul703)
   - [Agboyinu Success](https://www.github.com/SuccessTA)
-  - [Chiamaka Ezimmuo](https://github.com/Miriamchy)
+  - [Chiamaka Miriam E.](https://github.com/Miriamchy)
   - [Sonia Biose]()
   - [Saheed Ibrahim]()
 
