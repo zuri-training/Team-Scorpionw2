@@ -90,8 +90,18 @@ The platform will basically provide services to two categories of users namely; 
   - [Ugbo Joy](https://www.github.com/Akocity)
   - [AbdulAzeez Nuhu](https://www.github.com/Abdul703)
   - [Agboyinu Success](https://www.github.com/SuccessTA)
-  - [Chiamaka Miriam](https://github.com/Miriamchy)
+  - [Chiamaka Ezimmuo](https://github.com/Miriamchy)
+  - [Sonia Biose]()
+  - [Saheed Ibrahim]()
 
 - **Designers**
-  - Richard Babasola
-  - [Oyeniyi Adewale](https://www.github.com/Fadstrukt)
+  - [Richard Babasola](https://www.github.com/Richardbabasola) _Team Lead_
+  - [Frances Unegbu]()
+  - [Faith Adeoye]()
+  - [Emmanuel Isilo]()
+  - [Onyiyechukwu Odidika]()
+  - [Joshua Adebisi]()
+  - [Uduak Ukpong]()
+  - [Wisdom Ndem]()
+  - [John Udoh]()
+  - [Noorul-Haq Adeoye]()
