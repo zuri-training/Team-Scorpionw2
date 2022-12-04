@@ -82,7 +82,7 @@ The platform will basically provide services to two categories of users namely; 
 - Finally open your browser and locate
    [http://localhost:8000/home]('http://localhost:8000/home')
 
-## Contributors (Team Scorpion)
+## Contributors (Team Scorpionw2)
 
 - **Developers**
   - [Obeta Emmanuel](https://www.github.com/Emmizychuks)
