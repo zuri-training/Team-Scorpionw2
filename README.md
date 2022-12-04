@@ -29,7 +29,7 @@ The platform will basically provide services to two categories of users namely; 
 
 - [Documentation](https://docs.google.com/document/d/1zt5jb4y4N_L_i4R6az7JikxLBntXeOZys4qfWt-FibE/edit?usp=sharing)
 - [Designs from the Product Design Team](https://www.figma.com/file/8Yasy1Zyh7o291W2SnAf1O/Design-Sketch---Team-Scorpionw2?node-id=0%3A1)
-- [Database Schema]()
+- [Database Schema]( https://www.figma.com/file/CqKwL9mbtSXRap2lQgkTSt/Team-Scorpionw2-myCMS?node-id=0%3A1&t=HD7u4pKamZIgqAfS-1 )
 
 
 
@@ -90,7 +90,7 @@ The platform will basically provide services to two categories of users namely; 
   - [Ugbo Joy](https://www.github.com/Akocity)
   - [AbdulAzeez Nuhu](https://www.github.com/Abdul703)
   - [Agboyinu Success](https://www.github.com/SuccessTA)
-  - [Chiamaka Miriam E.](https://github.com/Miriamchy)
+  - [Chiamaka Ezimmuo](https://github.com/Miriamchy)
   - [Sonia Biose]()
   - [Saheed Ibrahim]()
 
