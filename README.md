@@ -97,11 +97,11 @@ The platform will basically provide services to two categories of users namely; 
   - [Richard Babasola](https://www.github.com/Richardbabasola) _Team Lead_
   - [Frances Unegbu](https://github.com/Amyluv49)
   - [Faith Adeoye](https://github.com/faithadeoye)
-  - [Emmanuel Isilo]()
+  - [Emmanuel Isilo](https://github.com/Isilo215)
   - [Onyiyechukwu Odidika](https://github.com/Onyiiye)
   - [Joshua Adebisi](https://GitHub.com/starjosh48)
   - [Uduak Ukpong](https://github.com/UdyFinbarr)
   - [Wisdom Ndem](https://github.com/TechBrain1)
-  - [John Udoh]()
+  - [John Udoh](https://github.com/UdohJohn)
   - [Noorul-Haq Adeoye](https://github.com/adeoyeadeyemi)
   - [Oyeniyi Adewale](https://github.com/Fadstrukt)
