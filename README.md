@@ -32,6 +32,7 @@ The platform will basically provide services to two categories of users namely; 
 - [GitHub Repo with read.me content](https://github.com/zuri-training/Team-Scorpionw2/blob/main/README.md)
 - [Database Schema]( https://www.figma.com/file/CqKwL9mbtSXRap2lQgkTSt/Team-Scorpionw2-myCMS?node-id=0%3A1&t=HD7u4pKamZIgqAfS-1 )
 - [Mood Board](https://www.figma.com/file/kg84xTxXvhypw8GGIhoyYA/MOOD-BOARD-Team-Scorpionw2?node-id=28%3A7&t=T5eJHHsT8g9ho7ds-1)
+- [Project Structure](https://github.com/zuri-training/Team-Scorpionw2/blob/main/PROJECT_STRUCTURE.md)
 
 ## Tech Stack
 
@@ -54,7 +55,7 @@ The platform will basically provide services to two categories of users namely; 
 - Go to the project directory
 
   ```bash
-  cd team-scorpionw2
+  cd Team-scorpionw2/backend/
   ```
 
 - Create a virtual environment
