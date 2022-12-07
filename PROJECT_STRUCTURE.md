@@ -1,22 +1,23 @@
 # Project Structure
 
-- cms-website
-  - templates
-    - template1.html
-    - template2.html
-    - template3.html
-    - ...
-  - user-websites
-    - user1
-      - index.html
-      - styles.css
-      - scripts.js
-    - user2
-      - index.html
-      - styles.css
-      - scripts.js
-    - ...
-  - cms-server.py
-  - cms-database.db
-  - README.md
-  - LICENSE.txt
+my_project/
+├── my_project/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── manage.py
+├── cms/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+└── templates/
+    └── cms/
+        ├── base.html
+        ├── page_detail.html
+        └── page_form.html
