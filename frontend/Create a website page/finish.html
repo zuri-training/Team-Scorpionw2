@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create A Website</title>
+    <link rel="stylesheet" href="website.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+                        <!-- MEDIA QUERY STYLING HERE -->
+<style>
+             @media screen and (max-width:820px) and 
+             (min-width:(375px)) {
+                .nav-area {
+                 width: 100%;
+                 display: flex;
+               flex-direction: row;
+              gap: 75%;
+                }
+                .logo-area {
+                 height: 50px;
+                 width: 50px;
+                 margin-right: 40px;
+                }
+                .logo {
+                 width: 100%;
+                  margin-left: 40px;
+                }
+                .profile-area {
+                border: none;
+                 height: 40px;
+                 width: 200px;
+                border: 1px dashed gray;
+                }
+                .profile-name {
+                 font-size: 0.5rem;
+                 padding: 10px 4px 0 0;
+                }
+                 .profile-image {
+                     width: 30px;
+                   background: none;
+                 }
+                 .image-profile {
+                     width: 100%;
+                 }
+                .new-design-paragraph {
+                    font-size: 1.7rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+               align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 30px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 12px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: 12px;
+            }
+            label {
+                    font-size: 1rem;
+                  }
+                  input::placeholder {
+                    font-size: 1rem;
+                  }
+               
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                   align-items: center;
+                     margin-top: 10px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 1rem;
+                     padding: 11px;
+                     width: 50%;
+                 }
+                 .prev {
+                    font-size: 1rem;
+                    padding: 11px;
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+             }
+
+                 
+
+             @media screen and (max-width:628px) {
+                .new-design-paragraph {
+                    font-size: 2rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+              align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -60px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+                  #DomainName {
+                    font-size: 0.4rem;
+                    font-weight: 600;
+                  }
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 50%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+                 
+             }
+
+             @media screen and (max-width:570px) {
+                .new-design-paragraph {
+                    font-size: 1.5rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+              align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -20px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+                  
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 40%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 40%;
+                    margin-bottom: 10px;
+                }
+               
+             }
+
+             @media screen and (max-width:414px) {
+             
+                .new-design-paragraph {
+                    font-size: 0.8rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+              align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -40px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+               
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 30%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 30%;
+                    margin-bottom: 10px;
+                }
+             }
+
+
+             
+
+             @media screen and (max-width:375px) {
+             
+                .new-design-paragraph {
+                    font-size: 1rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+              align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -40px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+               
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 30%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 30%;
+                    margin-bottom: 10px;
+                }
+             }
+
+             @media screen and (max-width:360px) {
+               
+                .new-design-paragraph {
+                    font-size: 1rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -40px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+                  
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 30%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 30%;
+                    margin-bottom: 10px;
+                }
+                 
+             }
+
+             @media screen and (max-width:320px) {
+                .nav-area {
+                 width: 100%;
+                 display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+                }
+                .logo-area {
+                 height: 50px;
+                 width: 50px;
+                 margin-left: 50px;
+                }
+                .logo {
+                 width: 100%;
+                  margin-left: 40px;
+                }
+                .profile-area {
+                border: none;
+                 height: 20px;
+                 width: 50%;
+                 margin-right: 100px;
+                }
+                .profile-name {
+                 font-size: 0.5rem;
+                 padding: 10px 4px 0 0;
+                }
+                 .profile-image {
+                     width: 30px;
+                   background: none;
+                 }
+                 .image-profile {
+                     width: 100%;
+                 }
+              
+                .new-design-paragraph {
+                    font-size: 1rem;
+                }
+                .finish-second-section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+               margin-top: 0;
+            }
+               #finish-second-section-container {
+                margin-left: 0;
+            }
+            .finish-second-section-container {
+                height: 300px;
+                width: 90%;
+               
+            }
+            .BName {
+                width: 100%;
+                height: 50px;
+                margin-top: 15px;
+            }
+            .BName input {
+                width: 100%;
+                border-radius: 5px;
+                padding: 8px;
+                border-color: gray;
+                opacity: 0.5;
+            }
+            #responsive {
+                margin-top: -40px;
+            }
+            label {
+                    font-size: 0.6rem;
+                  }
+                  input::placeholder {
+                    font-size: 0.6rem;
+                  }
+                
+                  .next-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                     margin-top: -60px;
+                     height: 30px;
+                     width: 100%;
+                     margin-left: 0;
+                 }
+                 .next {
+                     font-size: 0.5rem;
+                     padding: 11px;
+                     width: 30%;
+                 }
+                 .prev {
+                    font-size: 0.5rem;
+                    padding: 11px;
+                    width: 30%;
+                    margin-bottom: 10px;
+                }
+             }  
+</style>
+
+<body>
+                <nav class="nav-area">
+                            <div class="logo-area">
+                                    <img src="Assets/cms2 on white bg.png" class="logo" alt="cms logo">
+                        </div>
+                        <div class="profile-area">
+                                    <p class="profile-name">Fantara_Tee</p>
+                                    <div class="profile-image">
+                                                <img src="Assets/IMG-20220518-WA0029.jpg" alt="my profile-image" width="100%" style="border-radius: 50%;">
+                                    </div>
+                        </div>
+            </nav>
+
+            <section class="my_first_section" id="choose_first_section">
+                                <div class="new-design-container" id="new-design-container">
+                                            <p class="new-design-paragraph" id="choose-website">Finish Setting up your website for your store</p>
+                                </div>
+             </section>
+
+             <section class="finish-second-section">
+                                    <div class="finish-second-section-container" id="finish-second-section-container">
+                                              <form action="submit">
+                                                                <div class="BName">
+                                                                                <label for="businessaName">Business Name</label> <br>
+                                                                                <input type="text" id="bName" placeholder="e.g Dangote Refinery">
+                                                                </div>
+                                                               <div class="BName">
+                                                                                <label for="businessIndustyy">Business Industry</label> <br>
+                                                                                <input type="text" id="bIndustry" placeholder="e.g Automotive & Cars">
+                                                               </div>
+                                                               <div class="BName">
+                                                                                <label for="Email">Email Address</label> <br>
+                                                                                <input type="email" id="bEmail" placeholder="e.g Example@gmail.com">
+                                                               </div>
+                                                               <div class="BName">
+                                                                                <label for="phone">Phone Number</label> <br>
+                                                                                <input type="phone" id="phoneNo" placeholder="e.g +234 0xx xxx xxxx">
+                                                               </div>
+                                                 </form>              
+                                    </div>
+                                    <div class="finish-second-section-container" id="responsive">
+                                                 <form action="submit">
+                                                                <div class="BName">
+                                                                                <label for="Porfoliodes">Portfolio Description</label> <br>
+                                                                                <input type="text" id="portfolioDes" placeholder="e.g Quality Assurance">
+                                                               </div>
+                                                                <div class="BName">
+                                                                                <label for="DomainName">Preferred Portfolio Domain</label> <br>
+                                                                                <input type="text" id="domainName" placeholder="e.g .MyCms">
+                                                               </div>
+                                                                <div class="BName">
+                                                                                <label for="">Services</label> <br>
+                                                                                <input type="text" id="sevices" placeholder="e.g Sales & Repair">
+                                                              </div>   
+                                                 </form>   
+                                    </div>
+
+             </section>
+         
+             <section class="my_third_section">
+                                    <div class="next-button" id="next-button">
+                                                   <button class="prev" ><a href="type.html" style="text-decoration: none; color:black">&leftarrow; Prev </a></button>
+                                                    <button class="next">Next &rightarrow;</button>
+                                    </div>
+            </section>
+</body>
+</html>
