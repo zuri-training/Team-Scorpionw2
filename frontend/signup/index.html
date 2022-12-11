@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<script src="script.js"></script>
+
+<body>
+  <main class="signup">
+    <img src="/signup/image/logo.png" class="logo">
+    <h1>
+      Sign Up
+    </h1>
+
+    <form action="login.html" id="register">
+      <div>
+        <input type="text" placeholder="First Name  (eg: John)" name="firstname" required class="fields">
+      </div>
+      <div>
+        <input type="text" placeholder="Last Name   (eg: Doe)" name="lastname" required class="fields">
+      </div>
+      <div>
+        <input type="email" name="Email" id="name@gmail.X-UA-Compatible" placeholder="Email  (eg: JohnDoe@gmail.com)"
+          required class="fields">
+      </div>
+      </div>
+      <div>
+        <input type="number" name="PhoneNumber" id="" required placeholder="Phone Number" class="fields">
+      </div>
+      <div>
+        <input type="password" name="Password" id="password" placeholder="Password" required minlength="8"
+          maxlength="20" class="fields">
+      </div>
+      <div>
+        <input type="password" name="confirmPassword" id="cnfrm-password" placeholder=" Confirm Password" required minlength="8"
+          maxlength="20" class="fields">
+      </div>
+      <div class="agreement">
+        <input type="checkbox" name="" id="">
+        <label for="agreement"> I have read and agreed to the terms</label>
+      </div>
+      <div>
+        <button type="submit" value="submit" class="button">
+          Sign Up
+        </button>
+      </div>
+      <div>
+        <p>
+          Already have an account?
+          <a href="login.html">Log in</a>
+        </p>
+      </div>
+
+    </form>
+
+  </main>
+  
+
+</body>
+
+</html>

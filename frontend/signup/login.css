@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: aliceblue;
+  background-size: cover;
+}
+.wrapper{
+display: flex;
+justify-content: center;
+}
+.signup{
+  width: 300px;
+  background: #fff;
+  padding: 20px;
+  margin: 8% auto 0;
+  text-align: center;
+}
+.signup h1{
+  color: #1c8adb;
+  margin-bottom: 30px;
+
+}
+.inputbox{
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 90%;
+  border: 1px solid #999;
+  outline: none;
+  background-color: #f2f2f2
+}
+button{
+  color: #fff;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px 0;
+  background-color: #0075f2;
+}
+button:hover{
+cursor: pointer;
+font-size: 20px;
+background-color: lightblue;
+}
+span{
+  margin: 0;
+  padding: 0;
+}
+.remember{
+  margin-right: 130px;
+ font-family: Arial;
+ font-size: 20px;
+ line-height: 23px;
+ color: #ABA1A1; 
+} 
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+.logo{
+width: 30px;
+position: relative;
+left: 100px;
+top:0px;
+}
+
+input:hover{
+border: 1px solid #2bb5e3 ;
+background-color:aliceblue;
+color: #999;
+  
+
+}
+h1{
+font-size : 30px;
+margin-right: 180px;
+font-style: normal;
+font-family: 'Montserrat', sans-serif; 
+}
+p{
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 20px;
+    }
+a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: blue;
+    }
