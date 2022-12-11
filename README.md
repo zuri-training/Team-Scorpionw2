@@ -55,7 +55,7 @@ The platform will basically provide services to two categories of users namely; 
 - Go to the project directory
 
   ```bash
-  cd Team-scorpionw2/backend/
+  cd Team-scorpionw2/my_cms/
   ```
 
 - Create a virtual environment
