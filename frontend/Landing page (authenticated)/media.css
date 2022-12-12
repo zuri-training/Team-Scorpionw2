@@ -6,6 +6,49 @@
     max-height: 100vh;
   }
 
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    border-left: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border: none;
+    width: auto;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    background-color: #87cefa;
+    width: 40%;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
   main {
     width: 100%;
   }
@@ -19,16 +62,19 @@
 
   .homepage_container {
     width: 80%;
-    text-align: center;
+    margin: auto;
   }
   .homepage_img2 img {
     text-align: center;
     width: 200%;
     height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
   }
   .homepage_intro {
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
   .homepage_intro h3 {
     width: 100%;
@@ -67,10 +113,8 @@
     height: auto;
   }
   .purpose {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    text-align: center;
   }
   .form input {
     margin-top: 20px;
@@ -169,35 +213,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  /* navbar and homepage */
-  .navbar a {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .sign_in {
-    margin-bottom: 10px;
-  }
-  .cmslogo {
-    position: fixed;
-    top: 0;
   }
 }
 @media only screen and (max-width: 700px) and (min-width: 600px) {
@@ -208,7 +223,51 @@
     max-height: 100vh;
   }
 
-  main {
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive .icon:hover {
+    text-decoration: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-left: none;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    width: 40%;
+    background-color: #87cefa;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn main {
     width: 100%;
   }
   .homepage {
@@ -221,16 +280,19 @@
 
   .homepage_container {
     width: 80%;
-    text-align: center;
+    margin: auto;
   }
   .homepage_img2 img {
     text-align: center;
     width: 200%;
     height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
   }
   .homepage_intro {
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
   .homepage_intro h3 {
     width: 100%;
@@ -269,22 +331,21 @@
     height: auto;
   }
   .purpose {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    text-align: center;
   }
   .form input {
-    margin-top: 20px;
+    margin-top: 30px;
     width: 70%;
+
     border: solid #7a417c 1px;
     border-radius: 4px;
     padding: 5px 10px;
   }
   .homepage_img1 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 80%;
     margin-top: 50px;
     text-align: start;
   }
@@ -372,74 +433,103 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  /* navbar and homepage */
-  .navbar a {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .sign_in {
-    margin-bottom: 10px;
-  }
-  .cmslogo {
-    position: fixed;
-    top: 0;
-  }
 }
 @media only screen and (max-width: 995px) and (min-width: 701px) {
   /* navbar and homepage */
-  .navbar a {
+
+  .topnav a,
+  .dropdown .dropbtn {
     display: none;
   }
-  .navbar a.icon {
+  .topnav a.icon {
     float: right;
     display: block;
+    border-left: none;
   }
-
-  .navbar.responsive {
+  .topnav a.icon:hover {
+    text-decoration: none;
+  }
+  .topnav.responsive {
     position: relative;
+    display: block;
   }
-  .navbar.responsive .icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
+    border-left: none;
   }
-  .navbar.responsive a {
+  .topnav.responsive a {
     float: none;
-    display: inline-block;
+    display: block;
     text-align: center;
+    border-left: none;
   }
-  .sign_in {
-    margin-bottom: 10px;
+  .topnav.responsive .dropdown {
+    float: none;
   }
-  .cmslogo {
-    position: fixed;
-    top: 0;
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    width: 40%;
+    background-color: #87cefa;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .homepage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-content: center;
+  }
+
+  .homepage_container {
+    width: 80%;
+    margin: auto;
   }
   .homepage_img2 img {
     text-align: center;
-    min-width: 250%;
-    height: 200px;
+    width: 200%;
+    height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
   }
-}
-.menubtn {
-  position: fixed;
-  top: 0px;
-  right: 20px;
+  .homepage_intro {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .homepage_intro h3 {
+    width: 100%;
+    line-height: 34px;
+    font-size: 30px;
+  }
+  .homepage_intro p {
+    line-height: 28px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .purpose {
+    width: 100%;
+    text-align: center;
+  }
+  .form input {
+    margin-top: 20px;
+    width: 70%;
+    border: solid #7a417c 1px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .homepage_img1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    text-align: start;
+  }
 }

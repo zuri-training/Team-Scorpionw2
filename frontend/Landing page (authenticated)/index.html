@@ -12,33 +12,49 @@
   <script src="script.js"></script>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav_container">
-        <div class="logo">
-          <img src="images/Frame 206.png" alt="" class="cmslogo" />
-        </div>
-        <div class="navbar" id="myNavbar">
+    <header>
+      <div class="topnav" id="myTopnav">
+        <img src="images/Frame 206.png" alt="" class="cmslogo" class="active" />
+        <div>
           <a href="#HOME" class="home">Home</a>
           <a href="#ABOUT" class="about us">About us</a>
           <a href="#CONTACT" class="contact">Contact us</a>
           <a href="#SERVICES" class="services1">Services</a>
           <a href="#pricing" class="pricing">Pricing</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
         </div>
-        <div class="menu">
-          <button class="menubtn">Menu
+        <div class="dropdown">
+          <button class="dropbtn">
+            <img src="images/Frame 3721.png" alt="" />
             <i class="fa fa-caret-down"></i>
           </button>
-          <div class="menu_content">
-            <a href="#">Dashboard</a>
-            <a href="#">My Profile</a>
-            <a href="#">Purchase</a>
-            <a href="#">Notification</a>
-            <a href="#">Settings</a>
-            <a href="#">Log out</a>
-          </div> 
-      </nav>
+          <div class="dropdown-content">
+            <a href="#"></a>
+            <a href="#">
+              <img src="images/dashboard.png" alt="">
+              Dashboard</a>
+            <a href="#">
+              <img src="images/profile.png" alt="">
+              My Profile</a>
+            <a href="#">
+              <img src="images/purchase.png" alt="">
+              Purchase</a>
+            <a href="#">
+              <img src="images/notification.png" alt="">
+              Notification</a>
+            <a href="#">
+              <img src="images/logout.png" alt="">
+              Log out</a>
+          </div>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
     </header>
     <main>
       <section id="HOME">
@@ -53,8 +69,8 @@
             </p>
           </div>
           <div class="purpose">
-            <a href="#" class="self">For Self</a>
-            <a href="#" class="business">For Business</a>
+            <a href="#" class="self">Get Started</a>
+            
           </div>
           <div class="form">
             <form class="submit" action="">

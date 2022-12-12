@@ -246,9 +246,9 @@ span {
 }
 .templates_img {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 50%;
-  /* padding-right: 20px; */
 }
 .templates_img .first,
 .last {
