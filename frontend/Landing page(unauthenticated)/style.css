@@ -143,28 +143,17 @@ span {
   width: 100%;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
 }
-.purpose {
-  display: flex;
-  width: 60%;
-  justify-content: space-between;
-  grid-area: b;
-  padding: 0 3% 0 3%;
-  margin-bottom: 5%;
-}
+
 .purpose .self {
   background-color: #0075f2;
   color: white;
   padding: 5px 15px;
   text-decoration: none;
   border-radius: 3px;
-}
-.purpose .business {
-  background-color: #7a417c;
-  color: white;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-radius: 3px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .form input {
