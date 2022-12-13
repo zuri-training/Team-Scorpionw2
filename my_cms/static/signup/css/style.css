@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+   body{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #fff;
+        background-size: cover;
+        background-image: cover;
+         
+    }
+    .signup{
+      width: 60%;
+      background: #fff;
+      padding: 20px;
+      margin: 8% auto 0;
+      text-align: center;
+      margin-block: 0;
+      overflow: hidden;
+  
+    }
+    .fields{
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 70%;
+      border: 1px solid #999;
+      outline: none;
+      background-color: #f2f2f2;
+    }
+    
+    button{
+      color: #fff;
+      width: 70%;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 15px;
+      margin: 10px 0;
+      background-color:#0075f2;
+  }
+  button:hover{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: lightblue;
+  }
+  a{
+      text-decoration: none;
+  }
+  a:hover{
+      color: red;
+  }
+  p{
+      font-size: 20px;
+    font-family: regular;
+  }
+  @media screen and(max-width:1000px) { 
+      .signup{
+  width: 500px;
+          }
+    img{
+      width: 40px;
+    position: relative;
+    left: 700px;
+    top:0px;
+    }
+    
+  }
+  h1{
+     font-size : 60px;
+    margin-right: 700px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #1c8adb;
+  
+  }
+  
+  @media screen and (max-width:375px) {
+      .signup{
+        width: 300px;
+      }
+    img{
+    width: 30px;
+    position: relative;
+    left: 150px;
+    top:0px;
+    
+  }
+  } 
+  .agreement {
+    padding: 20px;
+    color: #ABA1A1;
+  }
+  input:hover{
+  border: 1px solid #2bb5e3;
+  background-color:aliceblue;
+  color: #999;
+    
+  }
+  h1{
+    font-family: Arial;
+   font-size : 30px;
+    margin-right: 180px;
+    font-style: normal;
+  }
+  .logo{
+    width: 30px;
+    position: relative;
+    left: 300px;
+    top:0px;
+  }
+      label{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: blue;
+      }

@@ -1,9 +1,61 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
-    <h2>Sign Up</h2>
-    <form method="post">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Sign Up</button>
-    </form>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="{% static 'signup/css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main class="signup">
+          <img src="{% static 'signup/images/logo.png' %}" class="logo">
+          <h1>
+            Sign Up
+          </h1>
+      
+          <form action="" method="post" id="register">{% csrf_token %}
+            <div>
+              {{ form.first_name }}
+            </div>
+            <div>
+              {{ form.last_name }}
+            </div>
+            <div>
+              {{ form.email }}
+            </div>
+            <div>
+              {{ form.phone_no }}
+            </div>
+            <div>
+              {{ form.password1 }}
+            </div>
+            <div>
+              {{ form.password2 }}
+            </div>
+            <div class="agreement">
+              <input type="checkbox" name="" id="">
+              <label for="agreement"> I have read and agreed to the terms</label>
+            </div>
+            <div>
+              <button type="submit" class="button">
+                Sign Up
+              </button>
+            </div>
+            <div>
+              <p>
+                Already have an account?
+                <a href="{% url 'login' %}">Log in</a>
+              </p>
+            </div>
+      
+          </form>
+      
+        </main>
+        
+      
+      </body>
+      
 {% endblock content %}

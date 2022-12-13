@@ -1,12 +1,56 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block content %}
-    <h2>Log In</h2>
+    <!-- <h2>Log In</h2>
 
     <form method="post">{% csrf_token %}
 
         {{ form.as_p }}
         <button type="submit">Log In</button>
 
+    </form> -->
+
+  <title>Log in</title>
+  <link rel="stylesheet" href="{% static 'signup/css/login.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class="signup">
+    <img src="{% static 'signup/images/logo.png' %}" class= "logo">
+    <h1>
+      Sign In
+    </h1>
+    
+    <form action="" method="post">{% csrf_token %}
+        {{ form.username }}
+        {{ form.password }}
+      <div >
+        <p class="remember" >
+          <span>
+            <input type="checkbox" name="" id="">
+          </span>
+          Remember me
+        </p>
+      </div>
+      <button type="submit">
+        Sign In
+      </button>
+      <p>
+        Don't have an account?
+        <a href="{% url 'signup' %}">
+          SignUp
+
+        </a>
+      </p>
     </form>
+  </div>
+    
+  </div>
+    
+
+</body>
 {% endblock content %}
