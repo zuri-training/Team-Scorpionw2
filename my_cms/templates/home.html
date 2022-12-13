@@ -1,45 +1,50 @@
-{% extends "base.html" %}
-
+<!DOCTYPE html>
 {% load static %}
+<html lang="en">
 
-{% block content %}
-  <link rel="stylesheet" href="{% static 'landing/css/style.css' %}" />
-  <link rel="stylesheet" href="{% static 'landing/css/mediaa.css' %}">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MY_CMS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'landing/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'landing/css/media.css' %}">
+  <script src="{% static 'landing/js/script.js' %}"></script>
 </head>
-  
+
 <body>
-    <header class="header">
-      <nav class="nav_container">
-        <div class="logo">
-          <img src="{% static 'landing/images/Frame 206.png' %}' %}" alt="" class="cmslogo" />
-        </div>
-        <div class="navbar" id="myNavbar">
-          <a href="#HOME" class="home">Home</a>
-          <a href="#ABOUT" class="about us">About us</a>
-          <a href="#CONTACT" class="contact">Contact us</a>
-          <a href="#SERVICES" class="services1">Services</a>
-          <a href="#pricing" class="pricing">Pricing</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            
-            {% if not user.is_authenticated %}
-              <a href="{% url 'login' %}" class="sign_in">Sign in</a>
-              <a href="{% url 'signup' %}" class="register">Register</a>
-            {% else %}
-                <a href="{% url 'logout' %}" class="sign_in">Logout</a>
-            {% endif %}
-          </div>
-       
+  <header class="header">
+    <nav class="nav_container">
+      <div class="logo">
+        <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="cmslogo" />
+      </div>
+      <div class="navbar" id="myNavbar">
+        <a href="#HOME" class="home">Home</a>
+        <a href="#ABOUT" class="about us">About us</a>
+        <a href="#CONTACT" class="contact">Contact us</a>
+        <a href="#SERVICES" class="services1">Services</a>
+        <a href="#pricing" class="pricing">Pricing</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
           
+          {% if not user.is_authenticated %}
+            <a href="{% url 'login' %}" class="sign_in">Sign in</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          {% else %}
+              <a href="{% url 'logout' %}" class="sign_in">Logout</a>
+          {% endif %}
         </div>
-      </nav>
-    </header>
-    <main>
-      <section id="HOME">
-        <div class="homepage">
-          <div class="homepage_container">
-            <div class="homepage_intro">
+     
+        
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="HOME">
+      <div class="homepage">
+        <div class="homepage_container">
+          <div class="homepage_intro">
             <h3>Create a <span>website</span> of your choice without hassle</h3>
             <br />
             <p>
@@ -48,8 +53,8 @@
             </p>
           </div>
           <div class="purpose">
-            <a href="#" class="self">For Self</a>
-            <a href="#" class="business">For Business</a>
+            <a href="#" class="self">Get Started</a>
+
           </div>
           <div class="form">
             <form class="submit" action="">
@@ -61,132 +66,130 @@
             <img src="{% static 'landing/images/Frame 120 (1).png' %}" alt="" />
             <img src="{% static 'landing/images/Frame 121.png' %}" alt="" />
             <img src="{% static 'landing/images/Frame 122.png' %}" alt="" />
-          </div></div>
-          <div class="homepage_img2">
-            <img
-              src="{% static 'landing/images/image 3.png' %}"
-              alt=""
-            />
           </div>
         </div>
-      </section>
-      <section class="templates_sec">
-        <div class="templates_container">
-          <div class="templates">
-            <p class="explore">Explore Thousands Of <span>FREE</span> Template</p>
-            <p class="more">
-              With more than 10 thousand free editable templates readily
-              available, My CMS website builder will get the job done in less than
-              5 minutes.
-            </p>
-            <div class="explore_btn">
-              <a href="#" target="_blank">Explore</a>
-            </div>
+        <div class="homepage_img2">
+          <img src="{% static 'landing/images/image 3.png' %}" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="templates_sec">
+      <div class="templates_container">
+        <div class="templates">
+          <p class="explore">Explore Thousands Of <span>FREE</span> Template</p>
+          <p class="more">
+            With more than 10 thousand free editable templates readily
+            available, My CMS website builder will get the job done in less than
+            5 minutes.
+          </p>
+          <div class="explore_btn">
+            <a href="#" target="_blank">Explore</a>
           </div>
+        </div>
         <div class="templates_img">
           <img src="{% static 'landing/images/image 10.png' %}" alt="" class="first">
           <img src="{% static 'landing/images/image 11.png' %}" alt="" class="mid">
           <img src="{% static 'landing/images/image 9.png' %}" alt="" class="last">
         </div>
-      </section>
-      <section id="build_sec">
-        <div class="build_container">
-          <h3 id="build">Build</h3>
-          <p class="getcreative">
-            Lets help you get creative, launch your website in three simple
-            steps...
-          </p>
-        </div>
-        <div class="steps">
-          <figure class="build_img">
-            <figcaption>Create an account</figcaption>
-            <img src="{% static 'landing/images/image-removebg-preview (5) 1.png' %}" alt="" />
-          </figure>
-           <p class="arrow">&#8594</p>
-          <figure class="build_img">
-            <figcaption>Edit a template</figcaption>
-            <img src="{% static 'landing/images/image-removebg-preview (9) 1.png' %}" alt="" />
-          </figure>
-          <p class="arrow">&#8594</p>
-          <figure class="build_img">
-            <figcaption>Launch your website</figcaption>
-            <img src="{% static 'landing/images/image-removebg-preview (10) 1.png' %}" alt="" />
-          </figure>
-        </div>
-      </section>
-      <section id="SERVICES" class="services_sec">
-        <div class="services_head">
-          <h3 class="services">Our Services</h3>
+    </section>
+    <section id="build_sec">
+      <div class="build_container">
+        <h3 id="build">Build</h3>
+        <p class="getcreative">
+          Lets help you get creative, launch your website in three simple
+          steps...
+        </p>
+      </div>
+      <div class="steps">
+        <figure class="build_img">
+          <figcaption>Create an account</figcaption>
+          <img src="{% static 'landing/images/image-removebg-preview (5) 1.png' %}" alt="" />
+        </figure>
+        <p class="arrow">&#8594</p>
+        <figure class="build_img">
+          <figcaption>Edit a template</figcaption>
+          <img src="{% static 'landing/images/image-removebg-preview (9) 1.png' %}" alt="" />
+        </figure>
+        <p class="arrow">&#8594</p>
+        <figure class="build_img">
+          <figcaption>Launch your website</figcaption>
+          <img src="{% static 'landing/images/image-removebg-preview (10) 1.png' %}" alt="" />
+        </figure>
+      </div>
+    </section>
+    <section id="SERVICES" class="services_sec">
+      <div class="services_head">
+        <h3 class="services">Our Services</h3>
         <p>With our state of the art infrastructure, we offer the best of services such as;</p>
-        </div>
-        <div class="services_container1">
-      <figure class="services_img">
-        <img src="{% static 'landing/images/account 2.png' %}" alt="" />
-        <figcaption>
-          Create and manage 
-          your web account with us.
-        </figcaption>
-      </figure>
-      <figure class="services_img">
-        <img src="{% static 'landing/images/domains.png' %}" alt="" />
-        <figcaption>
-          Find your place online with a domain from Us 
-        </figcaption>
-      </figure>
-      <figure class="services_img">
-        <img src="{% static 'landing/images/hosting2.png' %}" alt="" />
-        <figcaption>
-          Host a secure and scalable webapp
-        </figcaption>
-      </figure>
-        </div>
-        <div class="services_container2" >
-          <figure class="services_img">
-            <img src="{% static 'landing/images/admin control.png' %}" alt="" />
-            <figcaption>
-              Create your account and also get backend access
-            </figcaption>
-          </figure>
-          
-          <figure class="services_img">
-            <img src="{% static 'landing/images/social media1.png' %}" alt="" />
-            <figcaption>
-              Link your social media acounts and track analytics
-            </figcaption>
-          </figure>
-          
-          <figure class="services_img">
-            <img src="{% static 'landing/images/expert2.jpg' %}" alt="" />
-            <figcaption>
-              Get in touch with our team of highly professional builders
-            </figcaption>
-          </figure>
-        </div>
-      </section>
-      <section id="PRICING" class="price_sec">
-       <div class="pricing" >
+      </div>
+      <div class="services_container1">
+        <figure class="services_img">
+          <img src="{% static 'landing/images/account 2.png' %}" alt="" />
+          <figcaption>
+            Create and manage
+            your web account with us.
+          </figcaption>
+        </figure>
+        <figure class="services_img">
+          <img src="{% static 'landing/images/domains.png' %}" alt="" />
+          <figcaption>
+            Find your place online with a domain from Us
+          </figcaption>
+        </figure>
+        <figure class="services_img">
+          <img src="{% static 'landing/images/hosting2.png' %}" alt="" />
+          <figcaption>
+            Host a secure and scalable webapp
+          </figcaption>
+        </figure>
+      </div>
+      <div class="services_container2">
+        <figure class="services_img">
+          <img src="{% static 'landing/images/admin control.png' %}" alt="" />
+          <figcaption>
+            Create your account and also get backend access
+          </figcaption>
+        </figure>
+
+        <figure class="services_img">
+          <img src="{% static 'landing/images/social media1.png' %}" alt="" />
+          <figcaption>
+            Link your social media acounts and track analytics
+          </figcaption>
+        </figure>
+
+        <figure class="services_img">
+          <img src="{% static 'landing/images/expert2.jpg' %}" alt="" />
+          <figcaption>
+            Get in touch with our team of highly professional builders
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="PRICING" class="price_sec">
+      <div class="pricing">
         <h3>See pricing and plan</h3>
         <p>We offer competitive pricing and cost effective plan to help users reach their goals</p>
-       </div>
-       <div class="pricing_img">
-        <img src="{% static 'landing/images/Frame 3675.png' %}" alt="" class="one" >
-        <img src="{% static 'landing/images/Frame 3678.png' %}" alt=""  class="two">
-        <img src="{% static 'landing/images/Frame 3676.png' %}" alt=""  class="two">
+      </div>
+      <div class="pricing_img">
+        <img src="{% static 'landing/images/Frame 3675.png' %}" alt="" class="one">
+        <img src="{% static 'landing/images/Frame 3678.png' %}" alt="" class="two">
+        <img src="{% static 'landing/images/Frame 3676.png' %}" alt="" class="two">
         <img src="{% static 'landing/images/Frame 3677.png' %}" alt="" class="one">
-       
-       
-       
-       
-       </div>
-      </section>
-      <section id="ABOUT">
+
+
+
+
+      </div>
+    </section>
+    <section id="ABOUT">
       <div class="about_img">
         <figure>
-          <img src="{% static 'landing/images/image-removebg-preview (7) 1.png' %}" alt=""class="security">
+          <img src="{% static 'landing/images/image-removebg-preview (7) 1.png' %}" alt="" class="security">
           <figcaption>Security</figcaption>
         </figure>
-        <figure >
-          <img src="{% static 'landing/images/image-removebg-preview (6) 1.png' %}" alt="" class="identity" >
+        <figure>
+          <img src="{% static 'landing/images/image-removebg-preview (6) 1.png' %}" alt="" class="identity">
           <figcaption>Identity</figcaption>
         </figure>
         <figure>
@@ -198,63 +201,61 @@
       <div class="about_text">
         <h3>About us</h3>
         <p>
-          With more than 10 thousand free editable templates readily available, 
+          With more than 10 thousand free editable templates readily available,
           what My CMS unique? Our security achitecture is unrivaled.
         </p>
-      <a href="">Explore</a>
+        <a href="">Explore</a>
       </div>
-      </section>
-    </main>
-    <footer>
-      <section class="foot_sec1">
-        <div class="foot_text">
+    </section>
+  </main>
+  <footer>
+    <section class="foot_sec1">
+      <div class="foot_text">
         <p class="text1">You can't afford to miss out!</p>
         <p class="text2">Subscribe to latest news, offers and updates. No spam.</p>
       </div>
-        <div class="subscribe">
-          <form action="#">
-            <input type="email" id="Email" placeholder="Enter email">
-            <button>Subscribe</button>
-          </form>
-        </div>
-      </section>
-      <section class="foot_sec2">
-        <div class="foot_sec2_container">
-          <div class="icon">
-           <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="icon_logo">
-           <div class="icons">
+      <div class="subscribe">
+        <form action="#">
+          <input type="email" id="Email" placeholder="Enter email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="foot_sec2">
+      <div class="foot_sec2_container">
+        <div class="icon">
+          <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="icon_logo">
+          <div class="icons">
             <a href="#" class="fa fa-facebook"></a>
-           <a href="#" class="fa fa-twitter"></a>
-           <a href="#" class="fa fa-instagram"></a>
-           <a href="#" class="fa fa-linkedin"></a>
-           <a href="#" class="fa fa-github"></a>
-           </div>
-           <p>My CMS</p>
-      <p>Copyright &copy; 2022 all rights reserverd</p>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
           </div>
-          <div class="links">
-            <h6>Quick links</h6>
-            <a href="#build" >Build</a>
+          <p>My CMS</p>
+          <p>Copyright &copy; 2022 all rights reserverd</p>
+        </div>
+        <div class="links">
+          <h6>Quick links</h6>
+          <a href="#build">Build</a>
           <a href="#">Business</a>
-  <a href="#PRICING">Pricing</a>
-  <a href="#SERVICES">Services</a>  
-  <a href="#FAQ" >FAQs</a>
-</div>
-          <div class="contact">
+          <a href="#PRICING">Pricing</a>
+          <a href="#SERVICES">Services</a>
+          <a href="#FAQ">FAQs</a>
+        </div>
+        <div class="contact">
           <h6>Contact us</h6>
           <p>
             <i class="fa fa-map-marker"></i> Infomation technologies building,
             Victoria Island, Lagos, Nigeria.
           </p>
-          <p><i class="fa fa-phone" ></i> +234 811-234-5678 </p>
+          <p><i class="fa fa-phone"></i> +234 811-234-5678 </p>
           <p><i class="fa fa-envelope-o"></i> mycms@gmail.com</p>
-          </div>
         </div>
-      </section>
-    </footer>
-    
-    <script src="{% static 'landing/js/script.js' %}"></script>
-  </body>
+      </div>
+    </section>
+  </footer>
 
-    
-{% endblock content %}
+</body>
+
+</html>
