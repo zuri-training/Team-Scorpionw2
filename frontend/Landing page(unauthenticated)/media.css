@@ -25,10 +25,13 @@
     text-align: center;
     width: 200%;
     height: auto;
+    padding-left: 100px;
+    margin-bottom: 30px;
   }
   .homepage_intro {
     margin-bottom: 20px;
     width: 80%;
+    text-align: center;
   }
   .homepage_intro h3 {
     width: 100%;
@@ -67,10 +70,9 @@
     height: auto;
   }
   .purpose {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    text-align: center;
+    margin-bottom: 30px;
   }
   .form input {
     margin-top: 20px;
@@ -79,6 +81,7 @@
     border-radius: 4px;
     padding: 5px 10px;
   }
+
   .homepage_img1 {
     display: flex;
     justify-content: space-between;
@@ -229,10 +232,13 @@
     text-align: center;
     width: 200%;
     height: auto;
+    padding-left: 100px;
+    margin-bottom: 30px;
   }
   .homepage_intro {
     margin-bottom: 20px;
-    width: 80%;
+    width: 100%;
+    text-align: center;
   }
   .homepage_intro h3 {
     width: 100%;
@@ -271,11 +277,11 @@
     height: auto;
   }
   .purpose {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
-    margin-bottom: 5%;
+    text-align: center;
+    margin-bottom: 30px;
   }
+
   .form input {
     margin-top: 20px;
     width: 70%;
@@ -377,6 +383,7 @@
   /* navbar and homepage */
   .navbar a {
     display: none;
+    border-left: none;
   }
   .navbar a.icon {
     float: right;
@@ -408,6 +415,7 @@
   /* navbar and homepage */
   .navbar a {
     display: none;
+    border-left: none;
   }
   .navbar a.icon {
     float: right;
@@ -451,7 +459,7 @@
     width: 200%;
     height: auto;
     padding-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .homepage_intro {
     margin-bottom: 20px;
@@ -472,6 +480,7 @@
   .purpose {
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
   }
   .form input {
     margin-top: 20px;
