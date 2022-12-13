@@ -216,6 +216,92 @@ body {
                 color: black;
             }
 
+            /* THIS STYLING IS FOR ANOTHER.HTML PAGE */
+            .image-bar {
+                display: flex;
+                margin-top: 100px;
+                width: 70%;
+                margin: auto;
+                gap: 100px;
+            }
+            .bar {
+                display: flex;
+                height: 300px;
+                width: 60%;
+                border: 1px solid gray;
+                border-radius: 5px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 100px;
+                margin-left: 100px;
+             
+            }
+           .upload-image {
+            margin-top: 250px;
+            width: 20%;
+           }
+
+             /* THIS STYLING IS FOR KEEPGOING.HTML PAGE */
+            
+             .second-image-container {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                justify-content: center;
+              margin-top: 300px;
+             }
+             .class2 {
+                width: 10px;
+                height: 10px;
+                background-color: #12B76A;
+             }
+             .second-image-div p {
+                text-align: center;
+                color: #12B76A;
+                font-size: 0.5rem;
+                padding: 5px;
+                font-weight: bold;
+             }
+
+               /* THIS STYLING IS FOR UPDATED.HTML PAGE */
+              .updated-image {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+              }
+              .updated-image img {
+                width: 10%;
+              }
+
+                /* THIS STYLING IS FOR COMPLETE.HTML PAGE */
+              .cancel {
+                background-color: red;
+                color: white;
+                width: 30%;
+                padding: 10px;
+                border: none;
+                font-size: 1rem;
+                font-weight: bold;
+              }
+
+                 /* THIS STYLING IS FOR SUCCESS.HTML PAGE */
+                 .image-area-div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 150px;
+                 }
+                 .image-area-div img {
+                    width: 5%;
+                 }
+                 .Image_area p {
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 0.7rem;
+                 }
+
+
 
 
             @media screen and (max-width:1024px) {
