@@ -1,0 +1,159 @@
+@media only screen and (max-width: 599px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    position: relative;
+    border-left: none;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    border-left: none;
+  }
+  .sign_in {
+    margin-bottom: 10px;
+  }
+  .cmslogo {
+    position: fixed;
+    top: 0;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sign_in {
+    margin-bottom: 10px;
+  }
+  .cmslogo {
+    position: fixed;
+    top: 0;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 995px) and (min-width: 701px) {
+  /* navbar and homepage */
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .sign_in {
+    margin-bottom: 10px;
+  }
+  .cmslogo {
+    position: fixed;
+    top: 0;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

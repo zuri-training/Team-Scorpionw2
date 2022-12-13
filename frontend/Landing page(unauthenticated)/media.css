@@ -383,6 +383,7 @@
   /* navbar and homepage */
   .navbar a {
     display: none;
+    border-left: none;
   }
   .navbar a.icon {
     float: right;
@@ -414,6 +415,7 @@
   /* navbar and homepage */
   .navbar a {
     display: none;
+    border-left: none;
   }
   .navbar a.icon {
     float: right;
