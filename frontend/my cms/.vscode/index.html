@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,56 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY_CMS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="stylesheet" href="media2.css">
-  <script src="script2.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+  <script src="script.js"></script>
   </head>
   <body>
-  
-    <header>
-      <div class="topnav" id="myTopnav">
-        <img src="images/Frame 206.png" alt="" class="cmslogo" class="active" />
-        <div>
+    <header class="header">
+      <nav class="nav_container">
+        <div class="logo">
+          <img src="images/Frame 206.png" alt="" class="cmslogo" />
+        </div>
+        <div class="navbar" id="myNavbar">
           <a href="#HOME" class="home">Home</a>
-          <a href="about2.html" class="about us">About us</a>
+          <a href="about.html" class="about us">About us</a>
           <a href="#CONTACT" class="contact">Contact us</a>
           <a href="#SERVICES" class="services1">Services</a>
-          <a href="
-          price2.html" class="pricing">Pricing</a>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">
-            <img src="images/Frame 3721.png" alt="" />
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#"></a>
-            <a href="#">
-              <img src="images/dashboard.png" alt="">
-              Dashboard</a>
-            <a href="#">
-              <img src="images/profile.png" alt="">
-              My Profile</a>
-            <a href="#">
-              <img src="images/purchase.png" alt="">
-              Purchase</a>
-            <a href="#">
-              <img src="images/notification.png" alt="">
-              Notification</a>
-            <a href="#">
-              <img src="images/logout.png" alt="">
-              Log out</a>
+          <a href="price.html" class="pricing">Pricing</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            
+              <a href="" class="sign_in">Sign in</a>
+              <a href="" class="register">Register</a>
+              
           </div>
+       
+          
         </div>
-
-        <a
-          href="javascript:void(0);"
-          style="font-size: 15px"
-          class="icon"
-          onclick="myFunction()"
-          >&#9776;</a
-        >
-      </div>
+      </nav>
     </header>
     <main>
       <section id="HOME">
@@ -259,7 +235,7 @@
             <h6>Quick links</h6>
             <a href="#build" >Build</a>
           <a href="#">Business</a>
-  <a href="price2.html">Pricing</a>
+  <a href="price.html">Pricing</a>
   <a href="#SERVICES">Services</a>  
   <a href="#FAQ" >FAQs</a>
 </div>

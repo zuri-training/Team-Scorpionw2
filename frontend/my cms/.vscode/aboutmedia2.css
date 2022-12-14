@@ -1,0 +1,234 @@
+@media only screen and (max-width: 599px) {
+  /* navbar and homepage */
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    border-left: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border: none;
+    width: auto;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    background-color: #87cefa;
+    width: 40%;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  main {
+    padding-top: 15%;
+  }
+  .value1,
+  .value2,
+  .value3 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 2% 10%;
+  }
+  .value1 h3,
+  .value2 h3,
+  .value3 h3 {
+    width: 100%;
+  }
+  .value1 .value_content,
+  .value2 .value_content,
+  .value3 .value_content {
+    width: 100%;
+  }
+
+  .foot_sec1 {
+    display: block;
+  }
+
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    border-left: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border: none;
+    width: auto;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    background-color: #87cefa;
+    width: 40%;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .cmslogo {
+    position: fixed;
+    top: 0;
+    width: 100px;
+  }
+  .value1,
+  .value2,
+  .value3 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 2% 10%;
+  }
+  .value1 h3,
+  .value2 h3,
+  .value3 h3 {
+    width: 100%;
+  }
+  .value1 .value_content,
+  .value2 .value_content,
+  .value3 .value_content {
+    width: 100%;
+  }
+
+  .foot_sec1 {
+    display: block;
+    padding: 0 10px;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 995px) and (min-width: 701px) {
+  /* navbar and homepage */
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    border-left: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border: none;
+    width: auto;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    background-color: #87cefa;
+    width: 40%;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .cmslogo {
+    position: fixed;
+    top: 0;
+    width: 100px;
+  }
+
+  .value1,
+  .value2,
+  .value3 {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 2% 10%;
+  }
+  .value1 h3,
+  .value2 h3,
+  .value3 h3 {
+    width: 100%;
+  }
+  .value1 .value_content,
+  .value2 .value_content,
+  .value3 .value_content {
+    width: 100%;
+  }
+
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
