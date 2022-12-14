@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authentication.apps.AuthenticationConfig',
     'pages.apps.PagesConfig',
+    'website_build.apps.WebsiteBuildConfig',
 ]
 
 MIDDLEWARE = [

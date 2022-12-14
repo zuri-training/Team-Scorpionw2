@@ -29,11 +29,11 @@
             <li>
               <a href="#">
                 <i class='bx bx-bar-chart' ></i>
-                <span class="links_name">My Sites</main></span>
+                <span class="links_name">My Site</main></span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="{% url 'template' %}">
                 <i class='bx bx-pie-chart-alt-2' ></i>
                 <span class="links_name">Templates</span>
               </a>
@@ -100,9 +100,9 @@
    <img class="image" src="https://i.postimg.cc/5tfcHQB8/dashboard-pix.png" alt=""  align= "right">
                   <div class="text"></div>
 <p>Explore templates to create a theme that suits your  website goals.</p>
-       <form action="#" target="_blank">
-              <button type="button"> View more </button></form></div>
-          </form>         
+       <a href="{% url 'template' %}">
+              <button type="button"> View more </button></a></div>
+                  
                     </div>
                     </div>
                     </div

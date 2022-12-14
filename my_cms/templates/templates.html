@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Template</title>
+    <link rel="stylesheet" href="{% static 'template/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'template/fontawesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'template/css/akocity-style.css' %}" />
+    <link rel="stylesheet" href="{% static 'landing/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'landing/css/media.css' %}">
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <header class="header">
+        <nav class="nav_container">
+          <div class="logo">
+            <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="cmslogo" />
+          </div>
+          <div class="navbar" id="myNavbar">
+            <a href="{% url 'home' %}" class="contact">Home</a>
+            <a href="{% url 'about' %}" class="about us">About us</a>
+            <a href="{% url 'home' %}#CONTACT" class="contact">Contact us</a>
+            <a href="{% url 'home' %}#SERVICES" class="services1">Services</a>
+            <!-- <a href="#pricing" class="pricing">Pricing</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+              
+              {% if not user.is_authenticated %}
+                <a href="{% url 'login' %}" class="sign_in">Sign in</a>
+                <a href="{% url 'signup' %}" class="register">Register</a>
+              {% else %}
+                  <a href="{% url 'logout' %}" class="sign_in">Logout</a>
+              {% endif %}
+            </div>
+         
+            
+          </div>
+        </nav>
+      </header>
+
+    <!-- <div
+      class="tm-hero d-flex justify-content-center align-items-center"
+      data-parallax="scroll"
+      data-image-src="{% static 'template/images/hero.jgp' %}"
+    >
+      <form class="d-flex tm-search-form">
+        <input
+          class="form-control tm-search-input"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success tm-search-btn" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div> -->
+
+    <div  class="tm-hero d-flex justify-content-center align-items-center" >
+        <h2>Templates Gallery</h2>
+    <p> Give your business a unique look and feel. Choose from over a thousand available templates on Portfolio and customize them to suite your business and personal needs. Templates are always a good starting ground!</div>
+    </p>
+    
+    </div>
+    <!-- <div
+      class=" d-flex justify-content-center align-items-center"
+      data-parallax="scroll"
+    >
+      <form class="d-flex tm-search-form">
+        <input
+          class="form-control tm-search-input"
+          type="search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success tm-search-btn" type="submit">
+          Search
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div> -->
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+      <div class="row mb-4">
+        <h2 class="col-6 tm-text-primary-1">All Template</h2>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <h3 class="tm-text-primary-1">See all categories</h3>
+        </div>
+      </div>
+      <div class="row tm-mb-90 tm-gallery">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/portfolio.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Portfolio</h2>
+              <a href="photo-detail.html">View more</a>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Portfolio <br />
+              by Abdulazeez</span
+            >
+            <span><b>FREE</b></span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+              GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/coffee.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Blog</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Blog <br />
+              by Akocity</span
+            >
+            <span>$450</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/digilab.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Business</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Digilab <br />
+              by Akocity</span
+            >
+            <span>$125</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/educature.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Education</h2>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Educature <br />
+              by Akocity</span
+            >
+            <span>$300</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/MobApp.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Creative</h2>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >MobApp <br />
+              by Chiamaka</span
+            >
+            <span>$500</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/coffee.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Food/Drinks</h2>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Coffee <br />
+              by Chiamaka</span
+            >
+            <span>$400</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/imagine.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Business</h2>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Imagine <br />
+              by Chiamaka</span
+            >
+            <span>$300</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/calvino.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>SEO</h2>
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Calvino <br />
+              by Sonia</span
+            >
+            <span>$200</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/pato.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Restaurant</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Pata <br />
+              by Sonia</span
+            >
+            <span>$250</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/industry.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Industrial</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Industry <br />
+              by Sonia</span
+            >
+            <span>$399</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/finlone.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Finance</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Finlone <br />
+              by Emma</span
+            >
+            <span>$420</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/startup2.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Startup</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Startup2 <br />
+              by Emma</span
+            >
+            <span>$199</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/solmusic.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Music</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Solmusic <br />
+              by Emma</span
+            >
+            <span>$700</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/sportify.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Health/Fitness</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Sportify <br />
+              by Kalu</span
+            >
+            <span>$290</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/selling.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>eCommerce</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light">Selling <br />by Kalu</span>
+            <span>$450</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+          <figure class="effect-ming tm-video-item">
+            <img src="{% static 'template/images/webhost.webp' %}" alt="Image" class="img-fluid" />
+            <figcaption
+              class="d-flex align-items-center justify-content-center"
+            >
+              <h2>Web Hosting</h2>
+              <!-- <a href="photo-detail.html">View more</a> -->
+            </figcaption>
+          </figure>
+          <div class="d-flex justify-content-between tm-text-gray">
+            <span class="tm-text-gray-light"
+              >Webhost <br />
+              by Kalu</span
+            >
+            <span>$199</span>
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                GET NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- row -->
+      <div class="row tm-mb-90">
+        <div
+          class="col-12 d-flex justify-content-between align-items-center tm-paging-col"
+        >
+          <a
+            href="javascript:void(0);"
+            class="btn btn-primary tm-btn-prev mb-2 disabled"
+            >Previous</a
+          >
+          <div class="tm-paging d-flex">
+            <a href="javascript:void(0);" class="active tm-paging-link">1</a>
+            <a href="javascript:void(0);" class="tm-paging-link">2</a>
+            <a href="javascript:void(0);" class="tm-paging-link">3</a>
+            <a href="javascript:void(0);" class="tm-paging-link">4</a>
+            <a href="javascript:void(0);" class="tm-paging-link">5</a>
+          </div>
+          <a href="javascript:void(0);" class="btn btn-primary tm-btn-next"
+            >Next Page</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- container-fluid, tm-container-content -->
+
+    <footer>
+        <section class="foot_sec1">
+          <div class="foot_text">
+            <p class="text1">You can't afford to miss out!</p>
+            <p class="text2">Subscribe to latest news, offers and updates. No spam.</p>
+          </div>
+          <div class="subscribe">
+            <form action="#">
+              <input type="email" id="Email" placeholder="Enter email">
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </section>
+        <section class="foot_sec2">
+          <div class="foot_sec2_container">
+            <div class="icon">
+              <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="icon_logo">
+              <div class="icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-github"></a>
+              </div>
+              <p>My CMS</p>
+              <p>Copyright &copy; 2022 all rights reserverd</p>
+            </div>
+            <div class="links">
+              <h6>Quick links</h6>
+              <a href="#build">Build</a>
+              <a href="#">Business</a>
+              <a href="#PRICING">Pricing</a>
+              <a href="#SERVICES">Services</a>
+              <a href="#FAQ">FAQs</a>
+            </div>
+            <div id="CONTACT" class="contact">
+              <h6>Contact us</h6>
+              <p>
+                <i class="fa fa-map-marker"></i> Infomation technologies building,
+                Victoria Island, Lagos, Nigeria.
+              </p>
+              <p><i class="fa fa-phone"></i> +234 811-234-5678 </p>
+              <p><i class="fa fa-envelope-o"></i> mycms@gmail.com</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+    
+
+    <script src="{% static 'template/js/plugins.js' %}"></script>
+    <script>
+      $(window).on("load", function () {
+        $("body").addClass("loaded");
+      });
+    </script>
+  </body>
+</html>
