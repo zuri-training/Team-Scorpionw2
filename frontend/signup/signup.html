@@ -6,39 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signup.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&family=Roboto&display=swap" rel="stylesheet">
 </head>
-<script src="script.js"></script>
-
+<script src= "scripts.js">
+  
+</script>
 <body>
   <main class="signup">
-    <img src="/frontend/signup/image/logo.png" class="logo">
+    <img src="/frontend/signup/image/logo.png">
     <h1>
       Sign Up
     </h1>
 
-    <form action="login.html" id="register">
+    <form action="login.html" id= "register">
       <div>
-        <input type="text" placeholder="First Name  (eg: John)" name="firstname" required class="fields">
+      <label class="lstname" >
+         First name
+      </label>
+        <input type="text" name= "firstname" placeholder="First Name  (eg: John)" required class="fields" id= "first-name">
       </div>
       <div>
-        <input type="text" placeholder="Last Name   (eg: Doe)" name="lastname" required class="fields">
+        <label class="lstname" >
+          Last name
+        </label>
+        <input type="text" 
+          name= "lastname"
+          placeholder="Last Name   (eg: Doe)" required class="fields" id= "last-name">
       </div>
       <div>
+        <label class="email" >
+          Email
+        </label>
         <input type="email" name="Email" id="name@gmail.X-UA-Compatible" placeholder="Email  (eg: JohnDoe@gmail.com)"
           required class="fields">
       </div>
       </div>
       <div>
+        <label class="number" >
+          Phone Number
+        </label>
         <input type="number" name="PhoneNumber" id="" required placeholder="Phone Number" class="fields">
       </div>
       <div>
+        <label class="psswrd" >
+          Password
+        </label>
         <input type="password" name="Password" id="password" placeholder="Password" required minlength="8"
           maxlength="20" class="fields">
       </div>
       <div>
+        <label class="cnpsswrd" >
+          Confirm Password
+        </label>
         <input type="password" name="confirmPassword" id="cnfrm-password" placeholder=" Confirm Password" required minlength="8"
           maxlength="20" class="fields">
       </div>
@@ -62,7 +83,6 @@
 
   </main>
   
-
 </body>
 
 </html>

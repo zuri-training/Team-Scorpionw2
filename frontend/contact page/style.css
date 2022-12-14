@@ -148,12 +148,19 @@
   .two{
     margin-left: 60%;
     margin-bottom: 50px;
+    margin-top: 15px;
     width: 500px;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
       font-style: normal;
       color: black;
       font-size: 20px;
+      background-color: #0075f2;
+      padding-top: 10px;
+  }
+  .two:hover{
+    cursor: pointer;
+  
   }
   .mail{
     padding-top: 5px;
