@@ -21,6 +21,7 @@ justify-content: center;
   margin-bottom: 30px;
 
 }
+/*styling the input fields*/
 .inputbox{
   border-radius: 10px;
   padding: 10px;
@@ -30,6 +31,24 @@ justify-content: center;
   outline: none;
   background-color: #f2f2f2
 }
+input:hover{
+border: 1px solid #2bb5e3 ;
+
+}
+/*styling the input labels*/
+.email{
+margin-right: 225px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 20px;
+}
+.password{
+margin-right: 180px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 20px;
+}
+/*styling tye sign in button*/
 button{
   color: #fff;
   width: 90%;
@@ -49,6 +68,7 @@ span{
   margin: 0;
   padding: 0;
 }
+/* styling the remember me writeup*/
 .remember{
   margin-right: 130px;
  font-family: Arial;
@@ -56,26 +76,29 @@ span{
  line-height: 23px;
  color: #ABA1A1; 
 } 
+/* styling the sign up anchor tag*/
+
+a{
+font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: blue;
+    }
+
 a{
   text-decoration: none;
 }
 a:hover{
   color: red;
 }
+/*styling my cms logo*/
 .logo{
 width: 30px;
 position: relative;
 left: 100px;
 top:0px;
 }
-
-input:hover{
-border: 1px solid #2bb5e3 ;
-background-color:aliceblue;
-color: #999;
-  
-
-}
+/*styling tye header*/
 h1{
 font-size : 30px;
 margin-right: 180px;
@@ -86,10 +109,4 @@ p{
 font-family: 'Montserrat', sans-serif;
 font-weight: 400;
 font-size: 20px;
-    }
-a{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  color: blue;
     }

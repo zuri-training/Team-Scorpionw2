@@ -1,0 +1,549 @@
+@media only screen and (max-width: 599px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    border-left: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border: none;
+    width: auto;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    background-color: #87cefa;
+    width: 40%;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  main {
+    width: 100%;
+  }
+  .homepage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5vh;
+    align-content: center;
+  }
+
+  .homepage_container {
+    width: 80%;
+    margin: auto;
+  }
+  .homepage_img2 img {
+    text-align: center;
+    width: 200%;
+    height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+  .homepage_intro {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .homepage_intro h3 {
+    width: 100%;
+    line-height: 34px;
+    font-size: 30px;
+  }
+  .homepage_intro p {
+    line-height: 28px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .templates_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .templates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .templates_img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .templates_img .first,
+  .last {
+    width: 100%;
+    height: auto;
+  }
+  .purpose {
+    width: 100%;
+    text-align: center;
+  }
+  .form input {
+    margin-top: 20px;
+    width: 70%;
+    border: solid #7a417c 1px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .homepage_img1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    text-align: start;
+  }
+  .explore {
+    font-family: "Poppins", sans-serif;
+    font: size 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+  }
+  .more {
+    font: size 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    line-height: 28px;
+  }
+  .steps {
+    display: block;
+    text-align: center;
+  }
+  figcaption {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .services {
+    font-size: 34px;
+  }
+  .services_container1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .services_container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .services_img {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .services_img figcaption {
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  #ABOUT {
+    display: flex;
+
+    align-items: center;
+  }
+  .about_img {
+    display: block;
+  }
+  .about_img img {
+    width: 100px;
+    height: 100px;
+  }
+  .identity {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive .icon:hover {
+    text-decoration: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-left: none;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    width: 40%;
+    background-color: #87cefa;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .topnav.responsive .dropdown .dropbtn main {
+    width: 100%;
+  }
+  .homepage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 5vh;
+    align-content: center;
+  }
+
+  .homepage_container {
+    width: 80%;
+    margin: auto;
+  }
+  .homepage_img2 img {
+    text-align: center;
+    width: 200%;
+    height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+  .homepage_intro {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .homepage_intro h3 {
+    width: 100%;
+    line-height: 34px;
+    font-size: 30px;
+  }
+  .homepage_intro p {
+    line-height: 28px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .templates_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .templates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .templates_img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  .templates_img .first,
+  .last {
+    width: 100%;
+    height: auto;
+  }
+  .purpose {
+    width: 100%;
+    text-align: center;
+  }
+  .form input {
+    margin-top: 30px;
+    width: 70%;
+
+    border: solid #7a417c 1px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .homepage_img1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-top: 50px;
+    text-align: start;
+  }
+  .explore {
+    font-family: "Poppins", sans-serif;
+    font: size 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+  }
+  .more {
+    font: size 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    line-height: 28px;
+  }
+  .steps {
+    display: block;
+    text-align: center;
+  }
+  figcaption {
+    text-align: center;
+  }
+  .arrow {
+    display: none;
+  }
+  .services {
+    font-size: 34px;
+  }
+  .services_container1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .services_container2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .services_img {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .services_img figcaption {
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  #ABOUT {
+    display: flex;
+
+    align-items: center;
+  }
+  .about_img {
+    display: block;
+  }
+  .about_img img {
+    width: 100px;
+    height: 100px;
+  }
+  .identity {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  .foot_sec1 {
+    display: block;
+  }
+  .foot_sec2_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 995px) and (min-width: 701px) {
+  /* navbar and homepage */
+
+  .topnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    border-left: none;
+  }
+  .topnav a.icon:hover {
+    text-decoration: none;
+  }
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: none;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    border-left: none;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+  .topnav.responsive .dropdown-content {
+    position: relative;
+    width: 40%;
+    background-color: #87cefa;
+  }
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  .homepage {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-content: center;
+  }
+
+  .homepage_container {
+    width: 80%;
+    margin: auto;
+  }
+  .homepage_img2 img {
+    text-align: center;
+    width: 200%;
+    height: auto;
+    padding-left: 100px;
+    margin-bottom: 50px;
+  }
+  .homepage_intro {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .homepage_intro h3 {
+    width: 100%;
+    line-height: 34px;
+    font-size: 30px;
+  }
+  .homepage_intro p {
+    line-height: 28px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .purpose {
+    width: 100%;
+    text-align: center;
+  }
+  .form input {
+    margin-top: 20px;
+    width: 70%;
+    border: solid #7a417c 1px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+  .homepage_img1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    text-align: start;
+  }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+}

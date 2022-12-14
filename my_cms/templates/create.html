@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create A Website</title>
+    <link rel="stylesheet" href="{% static 'create/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'create/css/style copy.css' %}" />
+    <link rel="stylesheet" href="{% static 'template/css/bootstrap.min.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+  <body>
+    <nav class="nav-area">
+      <div class="logo-area">
+        <img src="{% static 'create/images/cms2 on white bg.png' %}" class="logo" alt="cms logo" />
+      </div>
+      <div class="profile-area">
+        <p class="profile-name">{{ user.first_name }}</p>
+        <div class="profile-image">
+          <img
+            src="{% static 'dashboard/images/Emarc.png' %}"
+            alt="my profile-image"
+            width="100%"
+            style="border-radius: 50%"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <section class="my_first_section" id="choose_first_section">
+      <div class="new-design-container" id="new-design-container">
+        <p class="new-design-paragraph" id="choose-website">
+          Finish Setting up your Portfolio Site
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <div class="row mt-5">
+        <div class="card col-lg-8 col-md-10 mx-auto">
+          <div class="card-body">
+
+            <!-- Floating Labels Form -->
+            <form method="post" class="row g-3">{% csrf_token %}
+
+              <h5 class="card-title">Website Information</h5>
+
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <input
+                    value={{user.id}}
+                    style="display: None"               
+                  />
+                  {{ form.user }}
+                  
+                </div>
+              </div>
+              
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <label for="fname">Website Title</label>
+                 
+                  {{ form.title }}
+                  
+                </div>
+              </div>
+              <!--End Firstname Input-->
+
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <label for="fname">Your Occupation</label>
+                  
+                  {{ form.occupation }}
+                  
+                </div>
+              </div>
+
+              
+              <div class="col-12">
+                <div class="form-floating">
+                  <label for="address">About Yourself</label>
+                  {{ form.about_me }}
+                  
+                </div>
+              </div>
+              <!--End Firstname Input-->
+            <!-- End Personal Information-->
+
+            <!--Guardian Information-->
+              <h5 class="card-title mb-0 mt-5">Skills</h5>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <label for="nokName">Skill 1</label>
+                  {{ form.skill1 }}
+                  
+                </div>
+              </div>
+              <!--End Guardian Name Input-->
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <label for="nokName">Skill 2</label>
+                  {{ form.skill2 }}
+                  
+                </div>
+              </div>
+              <!--End Guardian Relationship Input-->
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <label for="nokName">Skill 3</label>
+                  {{ form.skill3 }}
+                  
+                </div>
+              </div>
+              <!--End Guardian Email Input-->
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <label for="nokName">Skill 4</label>
+                  {{ form.skill4 }}
+                  
+                </div>
+              </div>
+              <!--End Guardian phone number Input-->
+            <!--Health Information-->
+            <h5 class="card-title mb-0 mt-5">Social Media Links</h5>
+
+            <div class="col-md-12">
+              <div class="form-floating">
+                <label for="disability">Twitter Account Link</label>
+                {{ form.twitter }}
+                
+              </div>
+            </div>
+            <!--End Blood Group Input-->
+
+            <div class="col-md-12">
+              <div class="form-floating">
+                <label for="disability">Facebook Account Link</label>
+                {{ form.fb }}
+                
+              </div>
+            </div>
+            <!--End disability Input-->
+          
+          <!-- End Health Info -->
+         
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Create
+              </button>
+            </div>
+            <!--End Submit Button-->
+          </form>
+          <!-- End floating Labels Form -->
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -6,34 +6,55 @@ html, body {
       padding: 0;
       margin: 0;
       font-family: sans-serif;
-      background-color: #fff;
+      background-color: aliceblue;
       background-size: cover;
-      background-image: cover;
-       
   }
+/*header styling*/
+h1{
+color: #1c8adb;
+}
+/* styling the wrapper*/
   .signup{
-    width: 60%;
+    width: 500px;
     background: #fff;
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
-    margin-block: 0;
-    overflow: hidden;
 
   }
+/* styling the input fields*/
   .fields{
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0;
-    width: 70%;
+    width: 90%;
     border: 1px solid #999;
     outline: none;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2
   }
-  
+/* styling the input labels*/
+/*label{
+margin-right: 150px;
+}*/
+.email{
+margin-right: 110px;
+}
+.lstname{
+margin-right: 130px;
+}
+.number{
+margin-right: 90px;
+}
+.psswrd{
+margin-right: 150px;
+}
+.cnpsswrd{
+margin-right: 50px;
+}
+/* styling the signup button*/
   button{
     color: #fff;
-    width: 70%;
+    width: 90%;
     padding: 10px;
     border-radius: 10px;
     font-size: 15px;
@@ -45,16 +66,46 @@ button:hover{
   font-size: 20px;
   background-color: lightblue;
 }
+/* styling the login anchor tag*/
+
 a{
     text-decoration: none;
 }
 a:hover{
     color: red;
 }
+/* styling the paragraph "already have an account"*/
+
 p{
     font-size: 20px;
   font-family: regular;
 }
+
+@media screen and(max-width:1245px) and (min-width: 1000px) {
+ 
+}
+label{
+margin-right: 1000px;
+}
+.email{
+margin-right: 400px;
+}
+.lstname{
+margin-right: 350px;
+}
+.number{
+margin-right: 300px;
+}
+.psswrd{
+margin-right: 350px;
+}
+.cnpsswrd{
+margin-right: 280px;
+}
+ 
+
+
+
 @media screen and(max-width:1000px) { 
     .signup{
 width: 500px;
@@ -65,8 +116,27 @@ width: 500px;
   left: 700px;
   top:0px;
   }
-  
+
+label{
+margin-right: 800px;
 }
+.email{
+margin-right: 350px;
+}
+.lstname{
+margin-right: 180px;
+}
+.number{
+margin-right: 160px;
+}
+.psswrd{
+margin-right: 190px;
+}
+.cnpsswrd{
+margin-right: 120px;
+}
+}
+  
 h1{
    font-size : 60px;
   margin-right: 700px;
@@ -93,9 +163,7 @@ h1{
   color: #ABA1A1;
 }
 input:hover{
-border: 1px solid #2bb5e3;
-background-color:aliceblue;
-color: #999;
+border: 1px solid #2bb5e3 ;
   
 }
 h1{
@@ -104,12 +172,12 @@ h1{
   margin-right: 180px;
   font-style: normal;
 }
-.logo{
-  width: 30px;
-  position: relative;
-  left: 300px;
-  top:0px;
-}
+img{
+     width: 30px;
+     position: relative;
+     left: 150px;
+     top:0px;
+    }
     label{
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
