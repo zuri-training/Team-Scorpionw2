@@ -21,7 +21,7 @@
       </div>
       <div class="navbar" id="myNavbar">
         <a href="#HOME" class="home">Home</a>
-        <a href="#ABOUT" class="about us">About us</a>
+        <a href="{% url 'about' %}" class="about us">About us</a>
         <a href="#CONTACT" class="contact">Contact us</a>
         <a href="#SERVICES" class="services1">Services</a>
         <a href="#pricing" class="pricing">Pricing</a>
@@ -56,12 +56,12 @@
             <a href="#" class="self">Get Started</a>
 
           </div>
-          <div class="form">
+          <!-- <div class="form">
             <form class="submit" action="">
               <input type="text" name="search" />
               <button type="submit">submit</button>
             </form>
-          </div>
+          </div> -->
           <div class="homepage_img1">
             <img src="{% static 'landing/images/Frame 120 (1).png' %}" alt="" />
             <img src="{% static 'landing/images/Frame 121.png' %}" alt="" />
@@ -243,7 +243,7 @@
           <a href="#SERVICES">Services</a>
           <a href="#FAQ">FAQs</a>
         </div>
-        <div class="contact">
+        <div id="CONTACT" class="contact">
           <h6>Contact us</h6>
           <p>
             <i class="fa fa-map-marker"></i> Infomation technologies building,
