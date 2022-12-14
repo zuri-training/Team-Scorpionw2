@@ -532,4 +532,18 @@
     margin-top: 50px;
     text-align: start;
   }
+  .pricing_img {
+    display: block;
+    text-align: center;
+  }
+  .pricing_img .one {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
+  .pricing_img .two {
+    width: 250px;
+    height: 415px;
+    border-radius: 5px;
+  }
 }

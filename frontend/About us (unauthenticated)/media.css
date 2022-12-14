@@ -140,8 +140,8 @@
   }
   .navbar.responsive a {
     float: none;
-    display: inline-block;
-    text-align: center;
+    display: block;
+    text-align: left;
   }
   .sign_in {
     margin-bottom: 10px;
