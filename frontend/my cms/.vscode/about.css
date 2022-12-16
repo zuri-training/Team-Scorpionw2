@@ -105,7 +105,7 @@ span {
   font-size: 20px;
   line-height: 32px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
   margin-top: 80px;
 }
@@ -138,6 +138,7 @@ strong {
   font-weight: 400;
   font-size: 20px;
   line-height: 2rem;
+  text-align: left;
 }
 .values {
   background-color: #cce3fc;

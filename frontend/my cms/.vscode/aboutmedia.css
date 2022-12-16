@@ -61,7 +61,7 @@
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 700px) and (min-width: 600px) {
+@media only screen and (max-width: 744px) and (min-width: 600px) {
   .navbar a {
     display: none;
   }
@@ -120,36 +120,15 @@
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 995px) and (min-width: 701px) {
-  /* navbar and homepage */
+@media only screen and (max-width: 1000px) and (min-width: 745px) {
   .navbar a {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-
-  .navbar.responsive {
-    position: relative;
-  }
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .sign_in {
-    margin-bottom: 10px;
-  }
-  .cmslogo {
-    position: fixed;
-    top: 0;
-    width: 100px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border-left: solid black 1px;
+    color: #0a0b0a;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
   }
 
   .value1,

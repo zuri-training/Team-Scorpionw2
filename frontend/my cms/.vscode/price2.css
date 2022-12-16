@@ -55,7 +55,11 @@ header {
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
 }
-
+.topnav .pricing {
+  color: #7a417c;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
 .active {
   background-color: #04aa6d;
   color: white;
@@ -73,19 +77,18 @@ header {
 .dropdown .dropbtn {
   font-size: 17px;
   border: none;
-  outline: none;
+  background-color: white;
   color: black;
-  padding: 5px 60px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  border: 2px solid black;
+  padding: 5px 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  right: 15px;
   background-color: #87cefa;
   border-radius: 5px;
   min-width: 160px;
@@ -96,7 +99,6 @@ header {
 .dropdown-content a {
   float: none;
   color: black;
-  /* padding: 12px 16px; */
   text-decoration: none;
   display: block;
   text-align: center;

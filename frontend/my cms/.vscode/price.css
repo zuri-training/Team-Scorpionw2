@@ -48,8 +48,11 @@ header {
 }
 .navbar .home {
   border-left: none;
+}
+.navbar .pricing {
   color: #7a417c;
   font-weight: 800;
+  font-family: "Montserrat", sans-serif;
 }
 .navbar .icon {
   display: none;
