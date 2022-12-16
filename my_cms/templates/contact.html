@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY_CMS</title>
+  <link rel="stylesheet" href="{% static 'contact/css/contact.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'landing/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'landing/css/media.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,100&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,100&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="{% static 'landing/js/script.js' %}"></script>
+</head>
+
+<body>
+<header class="header">
+      <nav class="nav_container">
+        <div class="logo">
+          <a href="{% url 'home' %}">
+          <img src="{% static 'contact/images/logo.png' %" alt="" class="cmslogo" />
+          </a>
+        </div>
+        <div class="navbar" id="myNavbar">
+          <a href="{% url 'home' %}" class="home">Home</a>
+          <a href="{% url 'about' %}" class="about_us">About us</a>
+          <a href="{% url 'contact' %}" class="contact_us">Contact us</a>
+          <a href="{% url 'home' %}#SERVICES" class="services1">Services</a>
+          <a href="{% url 'pricing' %}" class="pricing">Pricing</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            
+              {% if not user.is_authenticated %}
+            <a href="{% url 'login' %}" class="sign_in">Sign in</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          {% else %}
+              <a href="{% url 'logout' %}" class="sign_in">Logout</a>
+          {% endif %}
+              
+          </div>
+       
+          
+        </div>
+      </nav>
+    </header>
+  
+  <main>
+
+    <div class="wrapper">
+
+      
+      <h1 class="contact">
+        Contact Us
+      </h1>
+      <div class="body">
+        <div class="bodywrapper">
+
+          <div>
+            <p class="message">
+              Leave us a message
+            </p>
+          </div>
+
+          <div class="name">
+            <p>
+              Full Name
+            </p>
+            <input type="text" name="fullname" id="name" placeholder=" Input your fullname" required class="one">
+          </div>
+
+          <div class="name">
+            <p class="mail">
+              Email
+            </p>
+            <input type="email" name="email" id=" email" placeholder=" Input your Email" required class="one">
+          </div>
+          <div class="name">
+            <textarea name="write your message" id="" cols="30" rows="10"> Write your message here</textarea>
+          </div>
+
+          <input type="button" value="&#8594 Send message" class="two">
+
+        </div>
+        <div>
+          <img src="{% static 'contact/images/img.png' %}" alt="" class="image">
+          <div>
+            <p class="location">
+              <i class="fa fa-map-marker"></i>
+              Infomation technologies building,
+              Victoria Island, Lagos, Nigeria.
+            </p>
+            <p class="phone">
+              <i class="fa fa-phone"></i> +234 811-234-5678
+            <p class="email">
+              <i class="fa fa-envelope-o"></i>
+              mycms@gmail.com
+            </p>
+            <p>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+
+              <a href="https://github.com/zuri-training/Team-Scorpionw2/tree/main" class="fa fa-github"></a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+  </main>
+  <footer>
+    <section class="foot_sec1">
+      <div class="foot_text">
+        <p class="text1">You can't afford to miss out!</p>
+        <p class="text2">Subscribe to latest news, offers and updates. No spam.</p>
+      </div>
+      <div class="subscribe">
+        <form action="#">
+          <input type="email" id="Email" placeholder="Enter email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </section>
+    <section class="foot_sec2">
+      <div class="foot_sec2_container">
+        <div class="icon">
+          <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="icon_logo">
+          <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-github"></a>
+          </div>
+          <p>My CMS</p>
+          <p>Copyright &copy; 2022 all rights reserverd</p>
+        </div>
+        <div class="links">
+          <h6>Quick links</h6>
+          <a href="#build">Build</a>
+          <a href="#">Business</a>
+          <a href="#PRICING">Pricing</a>
+          <a href="#SERVICES">Services</a>
+          <a href="#FAQ">FAQs</a>
+        </div>
+        <div id="CONTACT" class="contact">
+          <h6>Contact us</h6>
+          <p>
+            <i class="fa fa-map-marker"></i> Infomation technologies building,
+            Victoria Island, Lagos, Nigeria.
+          </p>
+          <p><i class="fa fa-phone"></i> +234 811-234-5678 </p>
+          <p><i class="fa fa-envelope-o"></i> mycms@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+
+</body>
+
+</html>

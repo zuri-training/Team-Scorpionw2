@@ -22,12 +22,15 @@ from .forms import WebsiteForm
 class TemplatePageView(TemplateView):
     template_name = "templates.html"
 
+# class MyakocityPageView(TemplateView):
+#     template_name = "myakocity.html"
+
 
 class WebsiteCreateView(LoginRequiredMixin, CreateView):
 	model = Website
 	form_class = WebsiteForm
 	template_name = 'create.html'
-	success_url = reverse_lazy('template')
+	success_url = reverse_lazy('dashboard')
 
 	def form_valid(self,form):
             form.instance.user = self.request.user

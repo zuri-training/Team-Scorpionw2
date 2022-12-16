@@ -18,7 +18,9 @@
   <body>
     <nav class="nav-area">
       <div class="logo-area">
+        <a href="{% url 'home' %}">
         <img src="{% static 'create/images/cms2 on white bg.png' %}" class="logo" alt="cms logo" />
+        </a>
       </div>
       <div class="profile-area">
         <p class="profile-name">{{ user.first_name }}</p>

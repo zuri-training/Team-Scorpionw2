@@ -22,12 +22,14 @@
     <header class="header">
         <nav class="nav_container">
           <div class="logo">
+           <a href="{% url 'home' %}">
             <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="cmslogo" />
+          </a>
           </div>
           <div class="navbar" id="myNavbar">
             <a href="{% url 'home' %}" class="contact">Home</a>
             <a href="{% url 'about' %}" class="about us">About us</a>
-            <a href="{% url 'home' %}#CONTACT" class="contact">Contact us</a>
+            <a href="{% url 'contact' %}" class="contact">Contact us</a>
             <a href="{% url 'home' %}#SERVICES" class="services1">Services</a>
             <!-- <a href="#pricing" class="pricing">Pricing</a> -->
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -108,10 +110,11 @@
           <div class="d-flex justify-content-between tm-text-gray">
             <span class="tm-text-gray-light"
               >Portfolio <br />
-              by Abdulazeez</span
+              by Akocity</span
             >
             <span><b>FREE</b></span>
-            <a href="{% url 'create' %}">
+            <!-- <a href="{% url 'create' %}"> -->
+              <a href="{% url 'create' %}">
               <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
               </button>
@@ -134,9 +137,11 @@
               by Akocity</span
             >
             <span>$450</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -155,9 +160,11 @@
               by Akocity</span
             >
             <span>$125</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -175,9 +182,11 @@
               by Akocity</span
             >
             <span>$300</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
 
@@ -196,9 +205,11 @@
               by Chiamaka</span
             >
             <span>$500</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -216,9 +227,11 @@
               by Chiamaka</span
             >
             <span>$400</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -236,9 +249,11 @@
               by Chiamaka</span
             >
             <span>$300</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -256,9 +271,11 @@
               by Sonia</span
             >
             <span>$200</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -277,9 +294,11 @@
               by Sonia</span
             >
             <span>$250</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -298,9 +317,11 @@
               by Sonia</span
             >
             <span>$399</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -319,9 +340,11 @@
               by Emma</span
             >
             <span>$420</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -340,9 +363,11 @@
               by Emma</span
             >
             <span>$199</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -361,9 +386,11 @@
               by Emma</span
             >
             <span>$700</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -382,9 +409,11 @@
               by Kalu</span
             >
             <span>$290</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -400,9 +429,11 @@
           <div class="d-flex justify-content-between tm-text-gray">
             <span class="tm-text-gray-light">Selling <br />by Kalu</span>
             <span>$450</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
@@ -421,9 +452,11 @@
               by Kalu</span
             >
             <span>$199</span>
+            <a href="{% url 'pricing' %}">
             <button class="btn btn-outline-success tm-search-btn" type="submit">
                 GET NOW
             </button>
+            </a>
           </div>
         </div>
       </div>

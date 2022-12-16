@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MY_CMS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'landing/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'landing/css/media.css' %}">
+  <script src="{% static 'landing/js/script.js' %}"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'pricing/css/price.css' %}" />
+    <link rel="stylesheet" href="{% static 'pricing/css/pricemedia.css' %}">
+  <script src="{% static 'price.js' %}"></script>
+</head>
+
+  <body>
+    <header class="header">
+      <nav class="nav_container">
+        <div class="logo">
+            <a href="{% url 'home' %}">
+          <img src="landing/images/Frame 206.png" alt="" class="cmslogo" />
+          </a>
+        </div>
+        <div class="navbar" id="myNavbar">
+          <a href="{% url 'home' %}" class="home">Home</a>
+          <a href="{% url 'about' %}" class="about us">About us</a>
+          <a href="{% url 'contact' %}" class="contact">Contact us</a>
+          <a href="{% url 'home' %}#SERVICES" class="services1">Services</a>
+          <a href="{% url 'pricing' %}" class="pricing">Pricing</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            
+            {% if not user.is_authenticated %}
+            <a href="{% url 'login' %}" class="sign_in">Sign in</a>
+            <a href="{% url 'signup' %}" class="register">Register</a>
+          {% else %}
+              <a href="{% url 'dashboard' %}" class="pricing">Dashboard</a>
+              <a href="{% url 'logout' %}" class="sign_in">Logout</a>
+          {% endif %}
+              
+          </div>
+       
+          
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id="PRICING" class="price_sec">
+            <div class="pricing" >
+             <h3>See pricing and plan</h3>
+             <p>We offer competitive pricing and cost effective plan to help users reach their goals</p>
+            </div>
+            <div class="pricing_img">
+             <img src="{% static 'pricing/images/Frame 3675.png' %}" alt="" class="one" >
+             <img src="{% static 'pricing/images/Frame 3678.png' %}" alt=""  class="two">
+             <img src="{% static 'pricing/images/Frame 3676.png'%}" alt=""  class="two">
+             <img src="{% static 'pricing/images/Frame 3677.png' %}" alt="" class="one">
+            </div>
+           </section>
+    </main>
+    <footer>
+        <section class="foot_sec1">
+          <div class="foot_text">
+            <p class="text1">You can't afford to miss out!</p>
+            <p class="text2">Subscribe to latest news, offers and updates. No spam.</p>
+          </div>
+          <div class="subscribe">
+            <form action="#">
+              <input type="email" id="Email" placeholder="Enter email">
+              <button>Subscribe</button>
+            </form>
+          </div>
+        </section>
+        <section class="foot_sec2">
+          <div class="foot_sec2_container">
+            <div class="icon">
+              <img src="{% static 'landing/images/Frame 206.png' %}" alt="" class="icon_logo">
+              <div class="icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-github"></a>
+              </div>
+              <p>My CMS</p>
+              <p>Copyright &copy; 2022 all rights reserverd</p>
+            </div>
+            <div class="links">
+              <h6>Quick links</h6>
+              <a href="#build">Build</a>
+              <a href="#">Business</a>
+              <a href="#PRICING">Pricing</a>
+              <a href="#SERVICES">Services</a>
+              <a href="#FAQ">FAQs</a>
+            </div>
+            <div id="CONTACT" class="contact">
+              <h6>Contact us</h6>
+              <p>
+                <i class="fa fa-map-marker"></i> Infomation technologies building,
+                Victoria Island, Lagos, Nigeria.
+              </p>
+              <p><i class="fa fa-phone"></i> +234 811-234-5678 </p>
+              <p><i class="fa fa-envelope-o"></i> mycms@gmail.com</p>
+            </div>
+          </div>
+        </section>
+      </footer>
+      
+    </body>
+  </html>
+  
