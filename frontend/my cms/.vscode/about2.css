@@ -77,17 +77,18 @@ header {
   border: none;
   outline: none;
   color: black;
-  padding: 5px 60px;
-  background-color: inherit;
-  font-family: inherit;
+  padding: 5px 30px;
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
-  border: 2px solid black;
+
   border-radius: 10px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  right: 15px;
   background-color: #87cefa;
   border-radius: 5px;
   min-width: 160px;
@@ -142,6 +143,7 @@ main {
   line-height: 79.2px;
   text-align: center;
   padding: 3% 0;
+  margin-top: 8%;
 }
 span {
   color: #0075f2;

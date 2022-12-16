@@ -33,9 +33,7 @@ header {
 .topnav a {
   float: left;
   display: block;
-
   text-align: center;
-
   font-size: 17px;
   padding: 5px 10px;
   margin-left: 30px;
@@ -72,20 +70,19 @@ header {
 
 .dropdown .dropbtn {
   font-size: 17px;
-  border: none;
-  outline: none;
+  background-color: white;
   color: black;
-  padding: 5px 60px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  border: 2px solid black;
+  padding: 5px 30px;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 10px;
   border-radius: 10px;
+  border: none;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
+  right: 15px;
   background-color: #87cefa;
   border-radius: 5px;
   min-width: 160px;
@@ -96,7 +93,6 @@ header {
 .dropdown-content a {
   float: none;
   color: black;
-  /* padding: 12px 16px; */
   text-decoration: none;
   display: block;
   text-align: center;
@@ -131,14 +127,14 @@ main {
 /* styling the homepage content */
 
 .homepage {
-  width: 80%;
-  padding: 20% 5%;
+  width: 100%;
+  padding: 15% 5%;
   display: flex;
+  justify-content: center;
 }
 .homepage_intro {
   margin-bottom: 20px;
   width: 60%;
-  text-align: left;
 }
 .homepage_intro h3 {
   line-height: 50px;
@@ -196,7 +192,7 @@ span {
 .homepage_img2 img {
   padding-right: 30%;
   margin: 0;
-  width: 300%;
+  width: 550px;
   height: auto;
   border-top-left-radius: 100px;
 }
