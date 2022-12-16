@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create A Website</title>
+    <link rel="stylesheet" href="{% static 'create/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'create/css/style copy.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'template/css/bootstrap.min.css' %}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style></style>
+
+  <body>
+    <nav class="nav-area">
+      <div class="logo-area">
+        <img src="{% static 'create/images/cms2 on white bg.png' %}" class="logo" alt="cms logo" />
+      </div>
+      <div class="profile-area">
+        
+        <div class="profile-image">
+          <img
+            src="{% static 'dashboard/images/Emarc.png' %}"
+            alt="my profile-image"
+            width="100%"
+            style="border-radius: 50%"
+          />
+        </div>
+        <p class="profile-name">{{user.first_name}} {{user.last_name}}</p>
+      </div>
+    </nav>
+
+    <section class="Image_area">
+      <div class="image-area-div">
+        <img src="{% static 'create/images/checked.png' %}" alt="success logo' %}" />
+      </div>
+      <p>Your Website has been successfully created</p>
+    </section>
+
+    <div class="row justify-content-center">
+        <a class=" col-3" href="{% url 'dashboard' %}">
+          <button class="btn btn-primary">
+            Return to Dashboard
+          </button>
+        </a>
+        <a class=" col-3 ml-md-4" href="#">
+            <button class="btn btn-success">
+            Visit Your Site
+            </button>
+        </a>
+    </div>
+  </body>
+</html>

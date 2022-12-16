@@ -26,11 +26,15 @@ class TemplatePageView(TemplateView):
 #     template_name = "myakocity.html"
 
 
+class WebsiteSuccessView(LoginRequiredMixin, TemplateView):
+	template_name = 'create_success.html'
+
+
 class WebsiteCreateView(LoginRequiredMixin, CreateView):
 	model = Website
 	form_class = WebsiteForm
 	template_name = 'create.html'
-	success_url = reverse_lazy('dashboard')
+	success_url = reverse_lazy('create_success')
 
 	def form_valid(self,form):
             form.instance.user = self.request.user
