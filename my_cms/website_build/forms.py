@@ -5,7 +5,7 @@ class WebsiteForm(forms.ModelForm):
     class Meta:
         model = Website
         fields = [
-        "user",
+        # "user",
         "title",
         "occupation",
         "about_me",
@@ -18,7 +18,7 @@ class WebsiteForm(forms.ModelForm):
         ]
 
         widgets = {
-            'user': forms.TextInput(attrs={'class': 'form-control',}),
+            # 'user': forms.TextInput(attrs={'class': 'form-control',}),
             'title': forms.TextInput(attrs={'class': 'form-control',  'placeholder': "Title here", 'required': True}),
             'occupation': forms.TextInput(attrs={'class': 'form-control', 'placeholder': "e.g Web Developer", 'required': True}),
             'about_me': forms.Textarea(attrs={'class': 'form-control', 'style': 'height: 100px', 'placeholder': "I'm a web developer .....", 'required': True}),

@@ -23,20 +23,26 @@ class TemplatePageView(TemplateView):
     template_name = "templates.html"
 
 
-class WebsiteCreateView(CreateView):
+class WebsiteCreateView(LoginRequiredMixin, CreateView):
 	model = Website
 	form_class = WebsiteForm
 	template_name = 'create.html'
-	# fields = [
-    #     "user",
-    #     "title",
-    #     "occupation",
-    #     "about_me",
-    #     "skill1",
-    #     "skill2",
-    #     "skill3",
-    #     "skill4",
-    #     "fb",
-    #     "twitter",
-    #     ]
+	success_url = reverse_lazy('template')
+
+	def form_valid(self,form):
+            form.instance.user = self.request.user
+            return super().form_valid(form)
+
+# 	fields = [
+#         "user",
+#         "title",
+#         "occupation",
+#         "about_me",
+#         "skill1",
+#         "skill2",
+#         "skill3",
+#         "skill4",
+#         "fb",
+#         "twitter",
+#         ]
 
