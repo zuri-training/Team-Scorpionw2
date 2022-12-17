@@ -36,7 +36,7 @@
             style="border-radius: 50%"
           />
         </div>
-        <p class="profile-name">{{user.first_name}} {{user.last_name}}</p>
+        <p class="profile-name">{{user.first_name}}</p>
       </div>
     </nav>
 
@@ -53,7 +53,7 @@
             Return to Dashboard
           </button>
         </a>
-        <a class=" col-3 ml-md-4" href="#">
+        <a class=" col-3 ml-md-4" href="{% url 'portfolio' user.id %}">
             <button class="btn btn-success">
             Visit Your Site
             </button>

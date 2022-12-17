@@ -22,6 +22,13 @@ from .forms import WebsiteForm
 class TemplatePageView(TemplateView):
     template_name = "templates.html"
 
+
+class PortfolioPageView(DetailView):
+    template_name = "portfolio.html"
+    model = Website
+
+
+
 # class MyakocityPageView(TemplateView):
 #     template_name = "myakocity.html"
 
